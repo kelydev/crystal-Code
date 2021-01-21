@@ -1,0 +1,25 @@
+/*Header*/
+.bg-gris {
+    background-color: transparent !important;
+    padding: 1rem 1rem;
+}
+.navbar-light .navbar-nav {
+    .nav-link {
+    color: #0E70C7;
+    font-size: 1rem;
+    font-weight: 500;
+    }
+}
+
+.bg-gris.scrolled {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{
+    img {
+        max-height: 26px;
+        text-align: center;
+    }
+}
+

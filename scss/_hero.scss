@@ -1,0 +1,196 @@
+/*------------------------------------------------------------------
+HOME
+------------------------------------------------------------------*/
+.home {
+    background-image: url(../img/fondo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.textoHome {
+    padding: 12rem 0rem 0rem 1rem;
+}
+
+.titleHome {
+    margin: 0 0 1rem;
+}
+
+.subtitleHome {
+    font-size: 19px;
+    color: #ffffff;
+    margin: 0 0 2rem;
+}
+
+.imagenHome {
+    padding: 270px 0 0;
+}
+
+.form {
+    display: flex;
+
+    .form-control {
+        padding: 1rem 1rem 1rem .75rem;
+        border-radius: 0px;
+        border: none;
+    }
+    input {
+        margin-right: 150px;
+    }
+    .input-group-text {
+        padding: 1rem 1rem 1rem .75rem;
+    }
+    .btnCreaCuenta {
+        color: $color-menu;
+        background-color: $color-secondary;
+        margin-left: 10px;
+        padding: .9rem 1.5rem .9rem 1.5rem;
+        border-radius: 0px;
+        font-weight: 500; 
+        font-size: 18px;
+    }
+}
+
+.btnCreaCuenta:hover {
+    background-color: $color-menu;
+    color: $color-secondary;
+}
+
+.blanco {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.plomo {
+    background-color: $color-fondo;
+    padding: 25px 0px;
+    span {
+        font-size: 19px;
+    }
+}
+/*------------------------------------------------------------------
+SECCTION CRYSTAL
+------------------------------------------------------------------*/
+.crystal {
+    background-color: $color-menu;
+    margin: 45px 0px;
+    h3 {
+        color: $color-primary;
+    }
+    .imagenCrystal {
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+    .textoCrystal {
+        padding: 0px 20px;
+    }
+    span {
+        font-size: 15px;
+        color: $color-primary;
+        font-weight: 600;
+    }
+}
+/*------------------------------------------------------------------
+SECCTION METODOLOGIA CRYSTAL
+------------------------------------------------------------------*/
+.metodologia{
+    background-color: #f5f8fd;
+    padding: 70px 0 70px 0;
+    .metodo-img {
+        display: block;
+        margin: 0px auto;
+        max-width: 35%;
+    }
+    .card {
+        margin: 0px 0px;
+        padding: 30px 30px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    h4 {
+        color: $color-primary;
+    }
+    p{
+        padding-bottom: 40px;
+    }
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+    transform: translateY(-3%);
+}
+/*------------------------------------------------------------------
+SECCTION USUARIOS REGISTRADOS
+------------------------------------------------------------------*/
+.usuarios {
+    background-image: url("../img/fondoAzul.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 80% 20%;
+    .imgAdd {
+        width: 70px;
+        height: 70px;
+    }
+    span {
+        font-size: 18px;
+    }
+    p {
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+}
+
+.usuarios-overlay {
+    background-color: rgba(31, 31, 31, 0.507);
+    padding: 70px 0px;
+}
+/*------------------------------------------------------------------
+SECCTION TESTIMONIOS
+------------------------------------------------------------------*/
+.testimonios {
+    padding: 70px 0px 90px 0px;
+    background:$color-menu;
+    p {
+        margin-top: 30x;
+        font-size: 16px;
+        color: #9c9a9a;
+    }
+    icon {
+        color: black;
+    }
+    h2{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
+
+.testimonioImg {
+    padding-left: 190px;
+}
+
+.testimonioImage {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.carousel-caption {
+    padding-left: 160px;
+    text-align: left;
+}
+
+.carousel-indicators li {
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+
+

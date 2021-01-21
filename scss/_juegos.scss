@@ -1,0 +1,50 @@
+@import "variable";
+/*------------------------------------------------------------------
+HOME
+------------------------------------------------------------------*/
+.homeJuegos{
+    background-color: #0E70C7;
+    padding: 100px 20px;
+    h1{
+        padding-top:5px;
+    }
+    p{
+        color:$color-menu;
+    }
+}
+.juegos{
+    padding-top: 50px;
+}
+/*------------------------------------------------------------------
+JUEGOS
+------------------------------------------------------------------*/
+.juegoUno{
+    
+    background-color: #60CD96;
+}
+
+.juegoDos{
+   
+    background-color: #69D2E7;
+}
+
+.juegoTres{
+   
+    background-color: #F98F6F;
+}
+
+.juegoCuatro{
+   
+    background-color: #69D2E7;
+}
+
+.juegoCinco{
+   
+    background-color: #9D87C3;
+}
+
+.juegoSeis{
+    
+ 
+    background-color: #60CD96;
+}

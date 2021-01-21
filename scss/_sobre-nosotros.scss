@@ -1,0 +1,65 @@
+@import "variable";
+/*------------------------------------------------------------------
+HOME-SOBRE NOSOTROS
+------------------------------------------------------------------*/
+.homeAbout{
+    background-color: #0E70C7;
+    padding: 100px;
+    h1{
+        padding-top:5px;
+    }
+    p{
+        color:$color-menu;
+    }
+}
+/*------------------------------------------------------------------
+ORGANIZACION
+------------------------------------------------------------------*/
+.organizacion {
+    background-color: #EFF7F7;
+}
+
+.imgNosotros {
+    padding: 10px 50px;
+}
+
+
+.misionVision{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+/*------------------------------------------------------------------
+EQUIPO
+------------------------------------------------------------------*/
+.equipo{
+    padding: 50px 0px 100px 0px;
+    h2{
+        color: $color-primary;
+    }
+    .ceo{
+        text-align: center;
+        color: #404040;
+    }
+    .coCeo{
+        text-align: center;
+        color: #404040;
+    }
+    .marketing{
+        text-align: center;
+    }
+}
+
+.item p {
+    color: #404040;
+}
+
+.img-fluid {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.testimonio {
+    padding-top: 30px;
+}

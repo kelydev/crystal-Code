@@ -1,0 +1,384 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Template default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Categories Section
+7.  Instagram Section
+8.  About Section
+9.  Contact
+10.  Footer Style
+-------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.01071em; }
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.1; }
+
+h2 {
+  color: #0E70C7;
+  font-size: 35px;
+  padding: 10px 0px 0px 0px;
+  line-height: 1.35;
+  letter-spacing: .005em;
+  margin-bottom: 16px; }
+
+h3 {
+  letter-spacing: .005em;
+  color: #3C3C3C;
+  font-size: 25px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 18px; }
+
+h4 {
+  color: #ffffff;
+  font-size: 19px;
+  text-align: center;
+  line-height: 1.45;
+  font-weight: 600;
+  letter-spacing: .005em;
+  padding-top: 15px; }
+
+h5 {
+  color: #0E70C7;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+
+p {
+  font-size: 17px;
+  color: #777777;
+  padding-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .005em; }
+
+a {
+  color: #ffffff;
+  text-decoration: none; }
+
+/*Header*/
+.bg-gris {
+  background-color: transparent !important;
+  padding: 1rem 1rem; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0E70C7;
+  font-size: 1rem;
+  font-weight: 500; }
+
+.bg-gris.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.logo img {
+  max-height: 26px;
+  text-align: center; }
+
+/*------------------------------------------------------------------
+HOME
+------------------------------------------------------------------*/
+.home {
+  background-image: url(../img/fondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh; }
+
+.textoHome {
+  padding: 12rem 0rem 0rem 1rem; }
+
+.titleHome {
+  margin: 0 0 1rem; }
+
+.subtitleHome {
+  font-size: 19px;
+  color: #ffffff;
+  margin: 0 0 2rem; }
+
+.imagenHome {
+  padding: 270px 0 0; }
+
+.form {
+  display: flex; }
+  .form .form-control {
+    padding: 1rem 1rem 1rem .75rem;
+    border-radius: 0px;
+    border: none; }
+  .form input {
+    margin-right: 150px; }
+  .form .input-group-text {
+    padding: 1rem 1rem 1rem .75rem; }
+  .form .btnCreaCuenta {
+    color: #ffffff;
+    background-color: #FFC225;
+    margin-left: 10px;
+    padding: .9rem 1.5rem .9rem 1.5rem;
+    border-radius: 0px;
+    font-weight: 500;
+    font-size: 18px; }
+
+.btnCreaCuenta:hover {
+  background-color: #ffffff;
+  color: #FFC225; }
+
+.blanco {
+  background-color: #ffffff;
+  padding: 40px; }
+
+.plomo {
+  background-color: #d0d4d8;
+  padding: 25px 0px; }
+  .plomo span {
+    font-size: 19px; }
+
+/*------------------------------------------------------------------
+SECCTION CRYSTAL
+------------------------------------------------------------------*/
+.crystal {
+  background-color: #ffffff;
+  margin: 45px 0px; }
+  .crystal h3 {
+    color: #0E70C7; }
+  .crystal .imagenCrystal {
+    padding-top: 40px;
+    padding-left: 10px; }
+  .crystal .textoCrystal {
+    padding: 0px 20px; }
+  .crystal span {
+    font-size: 15px;
+    color: #0E70C7;
+    font-weight: 600; }
+
+/*------------------------------------------------------------------
+SECCTION METODOLOGIA CRYSTAL
+------------------------------------------------------------------*/
+.metodologia {
+  background-color: #f5f8fd;
+  padding: 70px 0 70px 0; }
+  .metodologia .metodo-img {
+    display: block;
+    margin: 0px auto;
+    max-width: 35%; }
+  .metodologia .card {
+    margin: 0px 0px;
+    padding: 30px 30px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease; }
+  .metodologia h4 {
+    color: #0E70C7; }
+  .metodologia p {
+    padding-bottom: 40px; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+  transform: translateY(-3%); }
+
+/*------------------------------------------------------------------
+SECCTION USUARIOS REGISTRADOS
+------------------------------------------------------------------*/
+.usuarios {
+  background-image: url("../img/fondoAzul.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: 80% 20%; }
+  .usuarios .imgAdd {
+    width: 70px;
+    height: 70px; }
+  .usuarios span {
+    font-size: 18px; }
+  .usuarios p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500; }
+
+.usuarios-overlay {
+  background-color: rgba(31, 31, 31, 0.507);
+  padding: 70px 0px; }
+
+/*------------------------------------------------------------------
+SECCTION TESTIMONIOS
+------------------------------------------------------------------*/
+.testimonios {
+  padding: 70px 0px 90px 0px;
+  background: #ffffff; }
+  .testimonios p {
+    margin-top: 30x;
+    font-size: 16px;
+    color: #9c9a9a; }
+  .testimonios icon {
+    color: black; }
+  .testimonios h2 {
+    text-align: center;
+    padding-bottom: 15px; }
+
+.testimonioImg {
+  padding-left: 190px; }
+
+.testimonioImage {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff; }
+
+.carousel-caption {
+  padding-left: 160px;
+  text-align: left; }
+
+.carousel-indicators li {
+  background-color: #0E70C7;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px; }
+
+/*------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------*/
+.footer {
+  background-color: #0E70C7; }
+  .footer .logo {
+    padding-top: 40px; }
+  .footer p {
+    padding-top: 20px;
+    color: white; }
+
+.footerPrincipal {
+  padding-top: 20px;
+  margin-bottom: 80px; }
+  .footerPrincipal ul {
+    list-style-type: none; }
+    .footerPrincipal ul li {
+      font-size: 17px;
+      margin: 7px; }
+  .footerPrincipal .btn {
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 13px 20px;
+    background-color: #FFC225;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25); }
+  .footerPrincipal .btnCuenta:hover {
+    background: #ffffff;
+    color: #0E70C7; }
+  .footerPrincipal h4 {
+    padding-bottom: 10px; }
+
+.contacto li a {
+  padding-left: 30px; }
+
+.subFooter {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px; }
+
+.secondary {
+  fill: #0E70C7; }
+
+/*------------------------------------------------------------------
+HOME-SOBRE NOSOTROS
+------------------------------------------------------------------*/
+.homeAbout {
+  background-color: #0E70C7;
+  padding: 100px; }
+  .homeAbout h1 {
+    padding-top: 5px; }
+  .homeAbout p {
+    color: #ffffff; }
+
+/*------------------------------------------------------------------
+ORGANIZACION
+------------------------------------------------------------------*/
+.organizacion {
+  background-color: #EFF7F7; }
+
+.imgNosotros {
+  padding: 10px 50px; }
+
+.misionVision {
+  padding-top: 100px;
+  padding-bottom: 70px; }
+
+/*------------------------------------------------------------------
+EQUIPO
+------------------------------------------------------------------*/
+.equipo {
+  padding: 50px 0px 100px 0px; }
+  .equipo h2 {
+    color: #0E70C7; }
+  .equipo .ceo {
+    text-align: center;
+    color: #404040; }
+  .equipo .coCeo {
+    text-align: center;
+    color: #404040; }
+  .equipo .marketing {
+    text-align: center; }
+
+.item p {
+  color: #404040; }
+
+.img-fluid {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff; }
+
+.testimonio {
+  padding-top: 30px; }
+
+/*------------------------------------------------------------------
+HOME
+------------------------------------------------------------------*/
+.homeJuegos {
+  background-color: #0E70C7;
+  padding: 100px 20px; }
+  .homeJuegos h1 {
+    padding-top: 5px; }
+  .homeJuegos p {
+    color: #ffffff; }
+
+.juegos {
+  padding-top: 50px; }
+
+/*------------------------------------------------------------------
+JUEGOS
+------------------------------------------------------------------*/
+.juegoUno {
+  background-color: #60CD96; }
+
+.juegoDos {
+  background-color: #69D2E7; }
+
+.juegoTres {
+  background-color: #F98F6F; }
+
+.juegoCuatro {
+  background-color: #69D2E7; }
+
+.juegoCinco {
+  background-color: #9D87C3; }
+
+.juegoSeis {
+  background-color: #60CD96; }
+
+/*@import "signin";
+@import "404";
+@import "typography";
+@import "responsive";*/

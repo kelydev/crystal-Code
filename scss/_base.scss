@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Template default CSS
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Helper Css
+3.  Header Section
+4.  Hero Section
+5.  Service Section
+6.  Categories Section
+7.  Instagram Section
+8.  About Section
+9.  Contact
+10.  Footer Style
+-------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-primary;
+    color:#ffffff;
+    letter-spacing: 0.01071em;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+h2 {
+    color: $color-primary;
+    font-size: 35px;
+    padding: 10px 0px 0px 0px;
+    line-height: 1.35;
+    letter-spacing: .005em;
+    margin-bottom: 16px;
+}
+
+h3 {
+    letter-spacing: .005em;
+    color: $color-texto;
+    font-size: 25px;
+    text-align: left;
+    padding-top:10px;
+    padding-bottom: 18px;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.45;
+    font-weight: 600;
+    letter-spacing: .005em;
+    padding-top: 15px;
+}
+
+h5 {
+    color: $color-primary;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 17px;
+    color:#777777;
+    padding-bottom: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .005em;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
