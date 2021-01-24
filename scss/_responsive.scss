@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+RESPONSIVE-MEDIA QUERIES
+------------------------------------------------------------------*/
+
+@media (max-width: 1199.98px) {
+   
+}
+
+@media (max-width: 991.98px) { 
+    .header__menu {
+        background-color: white !important;
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 767.98px) { 
+
+}
+
+@media (max-width: 575.98px) { 
+
+    .textoHome {
+        padding: 12rem 0rem 5rem 0.5rem;
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}

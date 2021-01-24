@@ -1,25 +1,56 @@
-/*Header*/
-.bg-gris {
-    background-color: transparent !important;
-    padding: 1rem 1rem;
-}
-.navbar-light .navbar-nav {
-    .nav-link {
-    color: #0E70C7;
-    font-size: 1rem;
-    font-weight: 500;
+/*------------------------------------------------------------------
+HEADER
+------------------------------------------------------------------*/
+.header__menu {
+    padding: 0.8rem 0.8rem;
+    .navbar-nav {
+        .nav-link {
+            color:#066fcc;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-right: .7rem;
+            padding-left: .7rem;
+            &:hover {
+                color:#3C3C3C;
+                //border-bottom: 1px solid #066fcc;
+            }
+        }
+    }
+    &.scrolled {
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &--logo {
+        margin-right: 30px;
+        img {
+            max-height: 26px;
+            text-align: center;
+        }
+    }
+    &--boton {
+        i {
+            color: #066fcc;
+            font-size: 28px;
+        }
+        color: white;
+    }
+    &--sesion {
+        .btn-outline-warning:hover{
+            color: white;
+        }
+        .btn-registrar {
+            background-color: #066fcc; 
+        }
+        .btn-outline-light:hover {
+            color: #066fcc; 
+            background-color: white;
+            border-color: #066fcc;
+        }
+    }
+    a.dropdown-item {
+        color: #066fcc;
     }
 }
-
-.bg-gris.scrolled {
-    background-color: #ffffff !important;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+button:focus {
+    outline: 1px dotted;
 }
-
-.logo{
-    img {
-        max-height: 26px;
-        text-align: center;
-    }
-}
-
