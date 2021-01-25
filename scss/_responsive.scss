@@ -1,9 +1,29 @@
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
 ------------------------------------------------------------------*/
-
 @media (max-width: 1199.98px) {
-   
+    /*home*/
+    .home {
+        &__texto {
+            padding-top:70px;
+            padding-left: 10px;
+            h1 {
+                font-size: 35px;
+                text-align: center;
+            }
+            &--parrafo {
+                text-align: center;
+                font-size: 18px;
+            }
+            .home__texto--correo{
+                padding-right: 5rem;
+                margin-right: 5px;
+            }
+            &--form {
+                justify-content: center;
+            }  
+        }
+    }
 }
 
 @media (max-width: 991.98px) { 
@@ -11,19 +31,75 @@ RESPONSIVE-MEDIA QUERIES
         background-color: white !important;
         padding: 1rem 1rem;
     }
+    .home {
+        &__texto {
+            padding-top:65px;
+            padding-bottom: 90px;
+            h1 {
+                font-size: 30px;
+            }
+            &--parrafo {
+                font-size: 17px;
+                margin: 0 0 1rem;
+            }
+            .home__texto--correo{
+               display: none;
+            } 
+        }
+    }
 }
 
 @media (max-width: 767.98px) { 
+    .home {
+        &__texto {
+            margin-left: 1.5%;
+            padding-left: 0.5%;
+            h1 {
+                font-size: 150%;
+                text-align: left;
+            }
+            &--parrafo {
+                font-size:80%;
+                margin: 0 0 2rem;
+                text-align: left;
+            }
+            &--form {
+                justify-content: left;
+            } 
+        }
+    }
 
 }
 
 @media (max-width: 575.98px) { 
-
-    .textoHome {
-        padding: 12rem 0rem 5rem 0.5rem;
-        h1{
-            font-size: 3rem;
-            text-align: center;
+    .home {
+        &__texto {
+            padding: 10% 5px 10% 5px;
+            margin: 0 5%;
+            h1 {
+                font-size: 150%;
+                text-align: center;
+            }
+            &--parrafo {
+                font-size:80%;
+                text-align: center;
+                margin: 0 0 2rem;
+            }
+            .home__texto--correo{
+                margin-right: 0px;
+                margin-bottom: 12px;
+                padding-right: 0px;
+                padding-left: 10px;
+            }
+            .home__texto--cuenta{
+                background-color: #FFC225;
+                margin-bottom: 10%;
+                padding: 0.50rem;
+                font-size: 0.8rem;
+            }
+            &--form {
+                justify-content: center;
+            }
         }
     }
 }

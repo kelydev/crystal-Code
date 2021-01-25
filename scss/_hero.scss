@@ -2,59 +2,47 @@
 HOME
 ------------------------------------------------------------------*/
 .home {
-    background-image: url(../img/fondo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-}
-
-.textoHome {
-    padding: 12rem 0rem 0rem 1rem;
-}
-
-.titleHome {
-    margin: 0 0 1rem;
-}
-
-.subtitleHome {
-    font-size: 19px;
-    color: #ffffff;
-    margin: 0 0 2rem;
-}
-
-.imagenHome {
-    padding: 270px 0 0;
-}
-
-.form {
-    display: flex;
-
-    .form-control {
-        padding: 1rem 1rem 1rem .75rem;
-        border-radius: 0px;
-        border: none;
-    }
-    input {
-        margin-right: 150px;
-    }
-    .input-group-text {
-        padding: 1rem 1rem 1rem .75rem;
-    }
-    .btnCreaCuenta {
-        color: $color-menu;
-        background-color: $color-secondary;
-        margin-left: 10px;
-        padding: .9rem 1.5rem .9rem 1.5rem;
-        border-radius: 0px;
-        font-weight: 500; 
-        font-size: 18px;
+    background-color:#066fcc;
+    &__texto {
+        padding:80px 5px 130px 5px;
+        &--parrafo {
+            font-size: 19px;
+            color:white;
+            margin: 0 0 2rem;
+        }
+        .home__texto--correo{
+            padding: 1.5rem 9rem 1.5rem 0.75rem;
+            margin-right: 5px;
+        }
+        .home__texto--cuenta{
+            background-color: #FFC225;
+            padding: 0.75rem;
+        }
+        
+        .btn-outline-light:hover {
+            color: #FFC225; 
+            background-color: white;
+            border-color: #066fcc;
+        }
     }
 }
-
-.btnCreaCuenta:hover {
-    background-color: $color-menu;
-    color: $color-secondary;
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.banner {
+    margin: 0px 0.5%;
+    &__img {
+        //margin-top: -390px;
+        margin-top: -32%;
+    }
 }
+/*------------------------------------------------------------------
+CRYSTAL
+------------------------------------------------------------------*/
+/*.img-fluid {
+    max-width: 100%;
+    height: auto;
+}*/
 
 .blanco {
     background-color: #ffffff;
@@ -67,6 +55,15 @@ HOME
     span {
         font-size: 19px;
     }
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.contenedor {
+    margin: 0px 2%;
 }
 /*------------------------------------------------------------------
 SECCTION CRYSTAL

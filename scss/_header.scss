@@ -2,7 +2,8 @@
 HEADER
 ------------------------------------------------------------------*/
 .header__menu {
-    padding: 0.8rem 0.8rem;
+    padding: 1rem 0.8rem 0.8rem;
+    //background-color: white;
     .navbar-nav {
         .nav-link {
             color:#066fcc;
@@ -12,7 +13,6 @@ HEADER
             padding-left: .7rem;
             &:hover {
                 color:#3C3C3C;
-                //border-bottom: 1px solid #066fcc;
             }
         }
     }

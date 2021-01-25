@@ -26,9 +26,9 @@ body {
   letter-spacing: 0.01071em; }
 
 h1 {
-  font-size: 45px;
+  font-size: 43px;
   font-weight: 600;
-  line-height: 1.1; }
+  line-height: 1.3; }
 
 h2 {
   color: #0E70C7;
@@ -77,7 +77,7 @@ a {
 HEADER
 ------------------------------------------------------------------*/
 .header__menu {
-  padding: 0.8rem 0.8rem; }
+  padding: 1rem 0.8rem 0.8rem; }
   .header__menu .navbar-nav .nav-link {
     color: #066fcc;
     font-size: 1rem;
@@ -117,48 +117,39 @@ button:focus {
 HOME
 ------------------------------------------------------------------*/
 .home {
-  background-image: url(../img/fondo2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh; }
+  background-color: #066fcc; }
+  .home__texto {
+    padding: 80px 5px 130px 5px; }
+    .home__texto--parrafo {
+      font-size: 19px;
+      color: white;
+      margin: 0 0 2rem; }
+    .home__texto .home__texto--correo {
+      padding: 1.5rem 9rem 1.5rem 0.75rem;
+      margin-right: 5px; }
+    .home__texto .home__texto--cuenta {
+      background-color: #FFC225;
+      padding: 0.75rem; }
+    .home__texto .btn-outline-light:hover {
+      color: #FFC225;
+      background-color: white;
+      border-color: #066fcc; }
 
-.textoHome {
-  padding: 12rem 0rem 0rem 1rem; }
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.banner {
+  margin: 0px 0.5%; }
+  .banner__img {
+    margin-top: -32%; }
 
-.titleHome {
-  margin: 0 0 1rem; }
-
-.subtitleHome {
-  font-size: 19px;
-  color: #ffffff;
-  margin: 0 0 2rem; }
-
-.imagenHome {
-  padding: 270px 0 0; }
-
-.form {
-  display: flex; }
-  .form .form-control {
-    padding: 1rem 1rem 1rem .75rem;
-    border-radius: 0px;
-    border: none; }
-  .form input {
-    margin-right: 150px; }
-  .form .input-group-text {
-    padding: 1rem 1rem 1rem .75rem; }
-  .form .btnCreaCuenta {
-    color: #ffffff;
-    background-color: #FFC225;
-    margin-left: 10px;
-    padding: .9rem 1.5rem .9rem 1.5rem;
-    border-radius: 0px;
-    font-weight: 500;
-    font-size: 18px; }
-
-.btnCreaCuenta:hover {
-  background-color: #ffffff;
-  color: #FFC225; }
-
+/*------------------------------------------------------------------
+CRYSTAL
+------------------------------------------------------------------*/
+/*.img-fluid {
+    max-width: 100%;
+    height: auto;
+}*/
 .blanco {
   background-color: #ffffff;
   padding: 40px; }
@@ -168,6 +159,14 @@ HOME
   padding: 25px 0px; }
   .plomo span {
     font-size: 19px; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none; }
+
+.contenedor {
+  margin: 0px 2%; }
 
 /*------------------------------------------------------------------
 SECCTION CRYSTAL
@@ -356,11 +355,11 @@ EQUIPO
 .item p {
   color: #404040; }
 
-.img-fluid {
-  width: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff; }
-
+/*.img-fluid {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}*/
 .testimonio {
   padding-top: 30px; }
 
@@ -402,17 +401,75 @@ JUEGOS
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
 ------------------------------------------------------------------*/
+@media (max-width: 1199.98px) {
+  /*home*/
+  .home__texto {
+    padding-top: 70px;
+    padding-left: 10px; }
+    .home__texto h1 {
+      font-size: 35px;
+      text-align: center; }
+    .home__texto--parrafo {
+      text-align: center;
+      font-size: 18px; }
+    .home__texto .home__texto--correo {
+      padding-right: 5rem;
+      margin-right: 5px; }
+    .home__texto--form {
+      justify-content: center; } }
+
 @media (max-width: 991.98px) {
   .header__menu {
     background-color: white !important;
-    padding: 1rem 1rem; } }
+    padding: 1rem 1rem; }
+  .home__texto {
+    padding-top: 65px;
+    padding-bottom: 90px; }
+    .home__texto h1 {
+      font-size: 30px; }
+    .home__texto--parrafo {
+      font-size: 17px;
+      margin: 0 0 1rem; }
+    .home__texto .home__texto--correo {
+      display: none; } }
+
+@media (max-width: 767.98px) {
+  .home__texto {
+    margin-left: 1.5%;
+    padding-left: 0.5%; }
+    .home__texto h1 {
+      font-size: 150%;
+      text-align: left; }
+    .home__texto--parrafo {
+      font-size: 80%;
+      margin: 0 0 2rem;
+      text-align: left; }
+    .home__texto--form {
+      justify-content: left; } }
 
 @media (max-width: 575.98px) {
-  .textoHome {
-    padding: 12rem 0rem 5rem 0.5rem; }
-    .textoHome h1 {
-      font-size: 3rem;
-      text-align: center; } }
+  .home__texto {
+    padding: 10% 5px 10% 5px;
+    margin: 0 5%; }
+    .home__texto h1 {
+      font-size: 150%;
+      text-align: center; }
+    .home__texto--parrafo {
+      font-size: 80%;
+      text-align: center;
+      margin: 0 0 2rem; }
+    .home__texto .home__texto--correo {
+      margin-right: 0px;
+      margin-bottom: 12px;
+      padding-right: 0px;
+      padding-left: 10px; }
+    .home__texto .home__texto--cuenta {
+      background-color: #FFC225;
+      margin-bottom: 10%;
+      padding: 0.50rem;
+      font-size: 0.8rem; }
+    .home__texto--form {
+      justify-content: center; } }
 
 /*@import "signin";
 @import "404";

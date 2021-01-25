@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title> Crystal | Juegos educativos de matemáticas para niños</title>
+    <meta name="description" content="Con crystal nuestros niños aprenden matemáticas y programación  de manera facil y divertida">
+    <meta name="keywords" content="matemáticas ,programación ,juegos de matemáticas ,matemáticas primaria,programación para niños">
+    <link rel="icon" href="../img/favicon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/dab8a44115.js" crossorigin="anonymous"></script>
@@ -16,18 +21,18 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar fixed-top navbar-expand-lg bg-gris navbar-light scrolling-navbar">
+        <nav class="navbar fixed-top navbar-expand-lg header__menu scrolling-navbar">
             <div class="container">
-                <div class="logo">
+                <div class="header__menu--logo">
                     <a href="../index.html">
                         <img src="../img/loguito.png" alt="Crystal">
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navPrincipal">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler header__menu--boton" data-toggle="collapse" data-target="#menuPrincipal">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navPrincipal">
-                    <ul class="navbar-nav me-auto mb-lg-0">
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
                         </li>
@@ -35,18 +40,16 @@
                             <a class="nav-link" href="../pages/juegos.html">Juegos</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Comunidad
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Comunidad</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="../pages/blog.html">Blog</a>
                                 <a class="dropdown-item" href="../pages/preguntasfrecuentes.html">F.A.Q</a>
                             </div>
                         </li>
                     </ul>
-                    <div class="d-flex">
-                        <button class="btn btn-outline-warning me-2" type="button">Registrarse</button>
-                        <button class="btn btn-primary btn-outline-light" type="button">Acceder</button>
+                    <div class="header__menu--sesion">
+                        <button class="btn btn-outline-warning" type="button">Acceder</button>
+                        <button class="btn btn-registrar btn-outline-light" type="button">Registrarse</button> 
                     </div>
                 </div>  
             </div>
