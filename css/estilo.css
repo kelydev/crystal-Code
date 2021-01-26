@@ -378,8 +378,10 @@ JUEGOS
     margin-bottom: 30px;
     padding: 20px; }
 
-.preguntas__listas {
-  border: 0.5px solid grey; }
+.preguntas {
+  padding: 70px 0px; }
+  .preguntas__lista {
+    margin-bottom: 25px; }
 
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
