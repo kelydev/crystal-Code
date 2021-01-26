@@ -4,12 +4,22 @@ HOME-SOBRE NOSOTROS
 ------------------------------------------------------------------*/
 .homeAbout{
     background-color: #0E70C7;
-    padding: 100px;
-    h1{
-        padding-top:5px;
+    &__texto {
+        padding-top: 80px;
+        padding-bottom:70px;
+        &--parrafo {
+            color:$color-menu;
+            padding-top: 10px;
+        }
     }
-    p{
-        color:$color-menu;
+}
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerAbout {
+    margin: 0px 0.5%;
+    &__img {
+        margin-top:-9%;
     }
 }
 /*------------------------------------------------------------------
@@ -17,18 +27,10 @@ ORGANIZACION
 ------------------------------------------------------------------*/
 .organizacion {
     background-color: #EFF7F7;
+    &__vision {
+        padding: 50px 2%;
+    }
 }
-
-.imgNosotros {
-    padding: 10px 50px;
-}
-
-
-.misionVision{
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-
 /*------------------------------------------------------------------
 EQUIPO
 ------------------------------------------------------------------*/
@@ -37,29 +39,12 @@ EQUIPO
     h2{
         color: $color-primary;
     }
-    .ceo{
-        text-align: center;
-        color: #404040;
+    &__usuario {
+        padding-top: 30px;
+        .equipo__img {
+            width: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
     }
-    .coCeo{
-        text-align: center;
-        color: #404040;
-    }
-    .marketing{
-        text-align: center;
-    }
-}
-
-.item p {
-    color: #404040;
-}
-
-/*.img-fluid {
-    width: 120px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-}*/
-
-.testimonio {
-    padding-top: 30px;
 }

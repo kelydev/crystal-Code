@@ -3,108 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title> Crystal | Juegos educativos de matemáticas para niños</title>
+    <meta name="description" content="Con crystal nuestros niños aprenden matemáticas y programación  de manera facil y divertida">
+    <meta name="keywords" content="matemáticas ,programación ,juegos de matemáticas ,matemáticas primaria,programación para niños">
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/dab8a44115.js" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar fixed-top navbar-expand-lg bg-gris navbar-light scrolling-navbar">
+        <nav class="navbar fixed-top navbar-expand-lg header__menu scrolling-navbar">
             <div class="container">
-                <div class="logo">
+                <div class="header__menu--logo">
                     <a href="../index.html">
                         <img src="../img/loguito.png" alt="Crystal">
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navPrincipal">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler header__menu--boton" data-toggle="collapse" data-target="#menuPrincipal">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navPrincipal">
-                    <ul class="navbar-nav me-auto mb-lg-0">
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../pages/sobrenosotros.html">Sobre nosotros</a>
+                            <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/juegos.html">Juegos</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Comunidad
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Comunidad</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="../pages/blog.html">Blog</a>
-                                <a class="dropdown-item" href="preguntasfrecuentes.html">F.A.Q</a>
+                                <a class="dropdown-item" href="../pages/preguntasfrecuentes.html">F.A.Q</a>
                             </div>
                         </li>
                     </ul>
-                    <div class="d-flex">
-                        <button class="btn btn-outline-warning me-2" type="button">Registrarse</button>
-                        <button class="btn btn-primary btn-outline-light" type="button">Acceder</button>
+                    <div class="header__menu--sesion">
+                        <button class="btn btn-outline-warning" type="button">Acceder</button>
+                        <button class="btn btn-registrar btn-outline-light" type="button">Registrarse</button> 
                     </div>
                 </div>  
             </div>
         </nav>
+        <div>
+            <img class="img-fluid" src="../img/nube.png" alt="">
+        </div>
     </header>
     <section class="homeJuegos">
         <div class="container text-center">
-            <h1>F.A.Q</h1>
+            <h1>Preguntas Frecuentes</h1>
             <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
         </div>
     </section>
     <section class="preguntas">
         <div class="container">
-            <div class="cards">
-                <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 preguntas__lista">
+                    <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
+                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 preguntas__lista">
+                    <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
+                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
             </div>
-            <div class="cards">
-                <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="cards">
-                <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="cards">
-                <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="cards">
-                <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="cards">
-                <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
-                <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 preguntas__lista">
+                    <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
+                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 preguntas__lista">
+                    <h3>¿Pinkfong’s Baby Shark: Teaching children to  wash their hands ? </h3>
+                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footerOnda" >
-            <svg version="1.1" class="secondary" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 126" xml:space="preserve" preserveAspectRatio="none slice">
+        <div class="footer__svg" >
+            <svg version="1.1" class="footer__svg--secondary" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 126" xml:space="preserve" preserveAspectRatio="none slice">
                 <path class="st0" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"></path>
             </svg>
         </div>
         <div class=" footer">
             <div class="container">
-                <div class="row footerPrincipal">
-                    <div class=" col-md-4 text-center">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="../img/logo.png" alt="Crystal">
-                            </a>
-                        </div>
+                <div class="row footer__top">
+                    <div class=" col-md-4 footer__top--logo text-center">
+                        <a href="index.html">
+                            <img src="../img/logo.png" alt="Crystal">
+                        </a>
                         <p>Con Crystal los niños <br> aprenden jugando.</p>
                         <button type="button" class="btn btnCuenta">Crea tu cuenta gratis</button>
                     </div>
-                    <div class="col-md-4 text-center contacto">
+                    <div class="col-md-4 text-center footer__top--contacto">
                         <h4>Habla con nosotros</h4>
                         <ul>
                             <li><i class="fas fa-phone"><a href="">+51 998 004 420</a></i></li>
@@ -122,11 +115,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row subFooter">
-                    <p class="text-center">Copyright © 2020 Crystal, Todos los derechos reservados.</p>
+                <div class="footer__bottom text-center">
+                    <p>Copyright © 2020 Crystal, Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/dab8a44115.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

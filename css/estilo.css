@@ -58,9 +58,7 @@ h4 {
 h5 {
   color: #0E70C7;
   font-size: 16px;
-  font-weight: 600;
-  padding-top: 20px;
-  padding-bottom: 30px; }
+  font-weight: 600; }
 
 p {
   font-size: 17px;
@@ -209,7 +207,7 @@ SECCTION METODOLOGIA CRYSTAL
 
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
-  transform: translateY(-3%); }
+  transform: translateY(-2%); }
 
 /*------------------------------------------------------------------
 SECCTION USUARIOS REGISTRADOS
@@ -274,67 +272,71 @@ SECCTION TESTIMONIOS
 /*------------------------------------------------------------------
 FOOTER
 ------------------------------------------------------------------*/
+.footer__svg--secondary {
+  fill: #0E70C7; }
+
 .footer {
   background-color: #0E70C7; }
-  .footer .logo {
-    padding-top: 40px; }
+  .footer__top {
+    padding-top: 20px;
+    margin-bottom: 80px; }
+    .footer__top--logo {
+      padding-top: 40px; }
+      .footer__top--logo img {
+        max-height: 26px;
+        text-align: center; }
+    .footer__top ul {
+      list-style-type: none; }
+      .footer__top ul li {
+        font-size: 17px;
+        margin: 7px; }
+    .footer__top .btn {
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 13px 20px;
+      background-color: #FFC225;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25); }
+    .footer__top .btnCuenta:hover {
+      background: #ffffff;
+      color: #0E70C7; }
+    .footer__top h4 {
+      padding-bottom: 10px; }
+    .footer__top--contacto li a {
+      padding-left: 30px; }
   .footer p {
     padding-top: 20px;
     color: white; }
-
-.footerPrincipal {
-  padding-top: 20px;
-  margin-bottom: 80px; }
-  .footerPrincipal ul {
-    list-style-type: none; }
-    .footerPrincipal ul li {
-      font-size: 17px;
-      margin: 7px; }
-  .footerPrincipal .btn {
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 13px 20px;
-    background-color: #FFC225;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25); }
-  .footerPrincipal .btnCuenta:hover {
-    background: #ffffff;
-    color: #0E70C7; }
-  .footerPrincipal h4 {
-    padding-bottom: 10px; }
-
-.contacto li a {
-  padding-left: 30px; }
-
-.subFooter {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px; }
-
-.secondary {
-  fill: #0E70C7; }
+  .footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px; }
 
 /*------------------------------------------------------------------
 HOME-SOBRE NOSOTROS
 ------------------------------------------------------------------*/
 .homeAbout {
-  background-color: #0E70C7;
-  padding: 100px; }
-  .homeAbout h1 {
-    padding-top: 5px; }
-  .homeAbout p {
-    color: #ffffff; }
+  background-color: #0E70C7; }
+  .homeAbout__texto {
+    padding-top: 80px;
+    padding-bottom: 70px; }
+    .homeAbout__texto--parrafo {
+      color: #ffffff;
+      padding-top: 10px; }
+
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerAbout {
+  margin: 0px 0.5%; }
+  .bannerAbout__img {
+    margin-top: -9%; }
 
 /*------------------------------------------------------------------
 ORGANIZACION
 ------------------------------------------------------------------*/
 .organizacion {
   background-color: #EFF7F7; }
-
-.imgNosotros {
-  padding: 10px 50px; }
-
-.misionVision {
-  padding-top: 100px;
-  padding-bottom: 70px; }
+  .organizacion__vision {
+    padding: 50px 2%; }
 
 /*------------------------------------------------------------------
 EQUIPO
@@ -343,25 +345,12 @@ EQUIPO
   padding: 50px 0px 100px 0px; }
   .equipo h2 {
     color: #0E70C7; }
-  .equipo .ceo {
-    text-align: center;
-    color: #404040; }
-  .equipo .coCeo {
-    text-align: center;
-    color: #404040; }
-  .equipo .marketing {
-    text-align: center; }
-
-.item p {
-  color: #404040; }
-
-/*.img-fluid {
-    width: 120px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-}*/
-.testimonio {
-  padding-top: 30px; }
+  .equipo__usuario {
+    padding-top: 30px; }
+    .equipo__usuario .equipo__img {
+      width: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff; }
 
 /*------------------------------------------------------------------
 HOME
@@ -374,29 +363,23 @@ HOME
   .homeJuegos p {
     color: #ffffff; }
 
-.juegos {
-  padding-top: 50px; }
-
 /*------------------------------------------------------------------
 JUEGOS
 ------------------------------------------------------------------*/
-.juegoUno {
-  background-color: #60CD96; }
+.juegos {
+  padding: 90px 0px; }
+  .juegos__cards {
+    margin-top: 10px; }
 
-.juegoDos {
-  background-color: #69D2E7; }
+.blog {
+  padding: 50px 1%; }
+  .blog__card {
+    box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
+    margin-bottom: 30px;
+    padding: 20px; }
 
-.juegoTres {
-  background-color: #F98F6F; }
-
-.juegoCuatro {
-  background-color: #69D2E7; }
-
-.juegoCinco {
-  background-color: #9D87C3; }
-
-.juegoSeis {
-  background-color: #60CD96; }
+.preguntas__listas {
+  border: 0.5px solid grey; }
 
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
@@ -445,7 +428,8 @@ RESPONSIVE-MEDIA QUERIES
       margin: 0 0 2rem;
       text-align: left; }
     .home__texto--form {
-      justify-content: left; } }
+      justify-content: left; }
+  /*-----acerca de*/ }
 
 @media (max-width: 575.98px) {
   .home__texto {
