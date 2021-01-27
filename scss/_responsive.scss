@@ -2,7 +2,7 @@
 RESPONSIVE-MEDIA QUERIES
 ------------------------------------------------------------------*/
 @media (max-width: 1199.98px) {
-    /*home*/
+    /*---home--*/
     .home {
         &__texto {
             padding-top:70px;
@@ -25,12 +25,13 @@ RESPONSIVE-MEDIA QUERIES
         }
     }
 }
-
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
+    /*---header---*/
     .header__menu {
         background-color: white !important;
         padding: 1rem 1rem;
     }
+    /*---home---*/
     .home {
         &__texto {
             padding-top:65px;
@@ -47,9 +48,16 @@ RESPONSIVE-MEDIA QUERIES
             } 
         }
     }
+    /*---Crystal---*/
+    .crystal {
+        &__img {
+            padding-top: 40px;
+        }
+    }
 }
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
+    /*--home--*/ 
     .home {
         &__texto {
             margin-left: 1.5%;
@@ -68,12 +76,29 @@ RESPONSIVE-MEDIA QUERIES
             } 
         }
     }
+    /*---Crystal---*/
+    .crystal {
+        &__img {
+            padding-top: 130px;
+        }
+    }
 
     /*-----acerca de*/
-  
+
+    /*---testimonios---*/
+    .testimonio {
+        text-align: center;
+        &__texto {
+            h3 {
+                text-align: center;
+                padding-top: 15px;
+            } 
+        }
+    }
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
+    /*---home---*/
     .home {
         &__texto {
             padding: 10% 5px 10% 5px;
@@ -81,6 +106,7 @@ RESPONSIVE-MEDIA QUERIES
             h1 {
                 font-size: 150%;
                 text-align: center;
+                padding-top: 40px;
             }
             &--parrafo {
                 font-size:80%;
@@ -102,6 +128,12 @@ RESPONSIVE-MEDIA QUERIES
             &--form {
                 justify-content: center;
             }
+        }
+    }
+    /*---Crystal---*/
+    .crystal {
+        &__img {
+            padding-bottom: 40px;
         }
     }
 }

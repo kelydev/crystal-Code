@@ -74,10 +74,10 @@
     <section class="crystal">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 imagenCrystal">
-                    <img src="img/nino.png" alt="nino" width="250px">
+                <div class="col-md-3 col-sm-6">
+                    <img src="img/nino.png" class="crystal__img" alt="nino">
                 </div>
-                <div class=" col-md-9 textoCrystal">
+                <div class=" col-md-9 col-sm-6 crystal__texto">
                     <h3>La nueva forma de aprender matematicas y programacion.</h3>
                     <p>En Crystal ayudamos a nuestros niños a desarrollar su creatividad a travez de juegos educativos online de matematicas y programacion.Nuestros juegos educativos online han demostrado ser una herramienta de aprendizaje eficaz tanto para el uso en el aula como en el hogar.</p>
                     <span>DESCUBRE COMO LO HACEMOS</span>
@@ -158,9 +158,53 @@
             </div>
         </div>
     </section>
-    <section class="testimonios">
-        <h2>Ellos han confiado en nosotros</h2>
+    <section class="testimonio">
+        <h2 class="testimonio__titulo">Ellos han confiado en nosotros</h2>
         <div class="container">
+            <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+                    <li data-target="#miCarrusel" data-slide-to="1"></li>
+                    <li data-target="#miCarrusel" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 testimonio__usuario">
+                                <img src="img/testimonio.jpg" class="testimonio__usuario--img" alt="Los Angeles">
+                            </div>
+                            <div class="col-md-8 testimonio__texto">
+                                <h3>David Salas</h3>
+                                <p>“Crystal nos ha colaborado en la educación de nuestros niños.Lo recomiendo al 200%.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3 testimonio__usuario">
+                                <img src="img/testimonio2.jpg" class="testimonio__usuario--img" alt="Los Angeles">
+                            </div>
+                            <div class="col-md-8 testimonio__texto">
+                                <h3>Carmen Rojas</h3>
+                                <p>"Excelente plataforma me ayudo con la enseñanza de mis hijos a hora ellas entiendenmejor los temas de programacion."</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3 testimonio__usuario">
+                                <img src="img/testimonio3.jpg" class="testimonio__usuario--img" alt="Los Angeles">
+                            </div>
+                            <div class="col-md-8 testimonio__texto">
+                                <h3>Luis Gibaja</h3>
+                                <p>Crystal engancha a nuestros alumnos con las matematicas.Compiten por las mejores puntuaciones y medallas de oro, !y hasta se lo pasan bien¡</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--div class="container">
             <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
                 <ul class="carousel-indicators">
                     <li data-target="#demo" data-slide-to="0" class="active icon"></li>
@@ -194,7 +238,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </section>
     <footer>
         <div class="footer__svg" >

@@ -42,9 +42,7 @@ h3 {
   letter-spacing: .005em;
   color: #3C3C3C;
   font-size: 25px;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 18px; }
+  text-align: left; }
 
 h4 {
   color: #ffffff;
@@ -52,8 +50,7 @@ h4 {
   text-align: center;
   line-height: 1.45;
   font-weight: 600;
-  letter-spacing: .005em;
-  padding-top: 15px; }
+  letter-spacing: .005em; }
 
 h5 {
   color: #0E70C7;
@@ -139,32 +136,8 @@ BANNER
 .banner {
   margin: 0px 0.5%; }
   .banner__img {
-    margin-top: -32%; }
-
-/*------------------------------------------------------------------
-CRYSTAL
-------------------------------------------------------------------*/
-/*.img-fluid {
-    max-width: 100%;
-    height: auto;
-}*/
-.blanco {
-  background-color: #ffffff;
-  padding: 40px; }
-
-.plomo {
-  background-color: #d0d4d8;
-  padding: 25px 0px; }
-  .plomo span {
-    font-size: 19px; }
-
-img {
-  max-width: 100%;
-  vertical-align: middle;
-  border-style: none; }
-
-.contenedor {
-  margin: 0px 2%; }
+    margin-top: -32%;
+    max-width: 100%; }
 
 /*------------------------------------------------------------------
 SECCTION CRYSTAL
@@ -174,11 +147,9 @@ SECCTION CRYSTAL
   margin: 45px 0px; }
   .crystal h3 {
     color: #0E70C7; }
-  .crystal .imagenCrystal {
+  .crystal__img {
     padding-top: 40px;
-    padding-left: 10px; }
-  .crystal .textoCrystal {
-    padding: 0px 20px; }
+    width: 90%; }
   .crystal span {
     font-size: 15px;
     color: #0E70C7;
@@ -195,7 +166,7 @@ SECCTION METODOLOGIA CRYSTAL
     margin: 0px auto;
     max-width: 35%; }
   .metodologia .card {
-    margin: 0px 0px;
+    margin: 8px 0px;
     padding: 30px 30px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     cursor: default;
@@ -203,7 +174,7 @@ SECCTION METODOLOGIA CRYSTAL
   .metodologia h4 {
     color: #0E70C7; }
   .metodologia p {
-    padding-bottom: 40px; }
+    padding-bottom: 20px; }
 
 .card:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
@@ -238,36 +209,32 @@ SECCTION USUARIOS REGISTRADOS
 /*------------------------------------------------------------------
 SECCTION TESTIMONIOS
 ------------------------------------------------------------------*/
-.testimonios {
-  padding: 70px 0px 90px 0px;
-  background: #ffffff; }
-  .testimonios p {
-    margin-top: 30x;
-    font-size: 16px;
-    color: #9c9a9a; }
-  .testimonios icon {
-    color: black; }
-  .testimonios h2 {
+.testimonio {
+  padding: 75px 0px; }
+  .testimonio__titulo {
     text-align: center;
-    padding-bottom: 15px; }
-
-.testimonioImg {
-  padding-left: 190px; }
-
-.testimonioImage {
-  width: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff; }
-
-.carousel-caption {
-  padding-left: 160px;
-  text-align: left; }
-
-.carousel-indicators li {
-  background-color: #0E70C7;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px; }
+    padding-bottom: 40px; }
+  .testimonio__usuario {
+    padding-left: 10%; }
+    .testimonio__usuario--img {
+      width: 110px;
+      border-radius: 50%; }
+  .testimonio__texto {
+    padding-bottom: 25px; }
+    .testimonio__texto h3 {
+      font-size: 19px;
+      font-weight: 600;
+      color: #6d6d6d; }
+    .testimonio__texto p {
+      margin-top: 30x;
+      font-size: 16px;
+      color: #777777; }
+  .testimonio .carousel-indicators li {
+    background-color: #0E70C7;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-bottom: -90px; }
 
 /*------------------------------------------------------------------
 FOOTER
@@ -387,7 +354,7 @@ JUEGOS
 RESPONSIVE-MEDIA QUERIES
 ------------------------------------------------------------------*/
 @media (max-width: 1199.98px) {
-  /*home*/
+  /*---home--*/
   .home__texto {
     padding-top: 70px;
     padding-left: 10px; }
@@ -404,9 +371,11 @@ RESPONSIVE-MEDIA QUERIES
       justify-content: center; } }
 
 @media (max-width: 991.98px) {
+  /*---header---*/
   .header__menu {
     background-color: white !important;
     padding: 1rem 1rem; }
+  /*---home---*/
   .home__texto {
     padding-top: 65px;
     padding-bottom: 90px; }
@@ -416,9 +385,13 @@ RESPONSIVE-MEDIA QUERIES
       font-size: 17px;
       margin: 0 0 1rem; }
     .home__texto .home__texto--correo {
-      display: none; } }
+      display: none; }
+  /*---Crystal---*/
+  .crystal__img {
+    padding-top: 40px; } }
 
 @media (max-width: 767.98px) {
+  /*--home--*/
   .home__texto {
     margin-left: 1.5%;
     padding-left: 0.5%; }
@@ -431,15 +404,26 @@ RESPONSIVE-MEDIA QUERIES
       text-align: left; }
     .home__texto--form {
       justify-content: left; }
-  /*-----acerca de*/ }
+  /*---Crystal---*/
+  .crystal__img {
+    padding-top: 130px; }
+  /*-----acerca de*/
+  /*---testimonios---*/
+  .testimonio {
+    text-align: center; }
+    .testimonio__texto h3 {
+      text-align: center;
+      padding-top: 15px; } }
 
 @media (max-width: 575.98px) {
+  /*---home---*/
   .home__texto {
     padding: 10% 5px 10% 5px;
     margin: 0 5%; }
     .home__texto h1 {
       font-size: 150%;
-      text-align: center; }
+      text-align: center;
+      padding-top: 40px; }
     .home__texto--parrafo {
       font-size: 80%;
       text-align: center;
@@ -455,7 +439,10 @@ RESPONSIVE-MEDIA QUERIES
       padding: 0.50rem;
       font-size: 0.8rem; }
     .home__texto--form {
-      justify-content: center; } }
+      justify-content: center; }
+  /*---Crystal---*/
+  .crystal__img {
+    padding-bottom: 40px; } }
 
 /*@import "signin";
 @import "404";
