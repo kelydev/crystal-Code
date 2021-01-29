@@ -59,6 +59,12 @@ RESPONSIVE-MEDIA QUERIES
         }
     }
     /*---------*****--------Sobre Nosotros---------*****---------*/
+    .homeAbout{
+        &__texto {
+            padding-top: 100px;
+            padding-bottom:150px;
+        }
+    }
     /*---------*****------------Juegos------------*****---------*/
     .homeJuegos{
         &__texto {
@@ -166,13 +172,21 @@ RESPONSIVE-MEDIA QUERIES
         }
     }
     /*---------*****--------Sobre Nosotros---------*****---------*/
+    .homeAbout{
+        &__texto {
+            h1 {
+                font-size: 35px;
+            }
+            padding-bottom:80px;
+        }
+    }
     /*---------*****------------Juegos------------*****---------*/
     .homeJuegos {
         &__texto {
             h1 {
                 font-size: 35px;
             }
-            padding-bottom:90px;
+            padding-bottom:80px;
         }
     }
     .juegos {
@@ -184,7 +198,7 @@ RESPONSIVE-MEDIA QUERIES
             h1 {
                 font-size: 35px;
             }
-            padding-bottom:90px;
+            padding-bottom:80px;
         }
     }
     .blog {
@@ -197,7 +211,7 @@ RESPONSIVE-MEDIA QUERIES
             h1 {
                 font-size: 35px;
             }
-            padding-bottom:90px;
+            padding-bottom:80px;
         }
     }
     .preguntas {

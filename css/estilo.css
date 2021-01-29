@@ -307,35 +307,28 @@ BANNER
 ORGANIZACION
 ------------------------------------------------------------------*/
 .organizacion {
-  background-color: #EFF7F7; }
+  padding: 40px 0px 20px; }
   .organizacion__informacion {
-    margin: 30px 0px; }
-    .organizacion__informacion--imagen {
-      padding: 50px 0px;
-      text-align: center; }
-    .organizacion__informacion--texto {
-      padding: 50px 0px 0px; }
-      .organizacion__informacion--texto h3 {
-        font-size: 20px;
-        color: #0E70C7; }
+    background-color: #f5f8fd;
+    box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
+    padding: 30px; }
+    .organizacion__informacion--img {
+      padding-bottom: 20px; }
+    .organizacion__informacion--titulo {
+      color: #0E70C7;
+      font-size: 19px; }
+    .organizacion__informacion--decripcion {
+      font-size: 16px; }
 
-/*------------------------------------------------------------------
-CONTACTANOS
-------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 EQUIPO
 ------------------------------------------------------------------*/
 .equipo {
-  padding: 30px 0px 100px 0px; }
+  padding: 60px 0px; }
   .equipo h2 {
     color: #0E70C7; }
   .equipo__usuario {
     padding-top: 30px; }
-    .equipo__usuario .equipo__img {
-      width: 120px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      padding-bottom: 10px; }
     .equipo__usuario p {
       background-color: #0E70C7;
       border-radius: 5px;
@@ -343,9 +336,13 @@ EQUIPO
       color: #ffffff; }
     .equipo__usuario span {
       color: #777777; }
-
-.equipo__usuario--ceo {
-  padding: 0px 80px; }
+    .equipo__usuario--ceo {
+      padding: 0px 80px 40px; }
+  .equipo__img {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    padding-bottom: 10px; }
 
 /*------------------------------------------------------------------
 HOME-JUEGOS
@@ -372,7 +369,10 @@ JUEGOS
 .juegos {
   padding: 40px 0px; }
   .juegos__card {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border: none; }
     .juegos__card--titulo {
       color: #0E70C7;
       font-size: 19px; }
@@ -381,17 +381,11 @@ JUEGOS
     .juegos__card img {
       border-top-right-radius: 5px;
       border-top-left-radius: 5px; }
-
-.juegos__card {
-  border-radius: 5px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  border: none; }
-
-.juegos__card:hover {
-  background-color: #0e71c74d; }
+  .juegos__card:hover {
+    background-color: #0e71c74d; }
 
 /*------------------------------------------------------------------
-HOME-PREGUNTAS
+HOME-BLOG
 ------------------------------------------------------------------*/
 .homeBlog {
   background-color: #0E70C7; }
@@ -409,6 +403,9 @@ BANNER
     margin-top: -25%;
     max-width: 100%; }
 
+/*------------------------------------------------------------------
+BLOG
+------------------------------------------------------------------*/
 .blog {
   padding: 40px 0px; }
   .blog__card {
@@ -440,6 +437,9 @@ BANNER
     margin-top: -25%;
     max-width: 100%; }
 
+/*------------------------------------------------------------------
+PREGUNTAS
+------------------------------------------------------------------*/
 .preguntas {
   padding: 40px 0px; }
   .preguntas__card {
@@ -493,6 +493,9 @@ RESPONSIVE-MEDIA QUERIES
   .crystal__img {
     padding-top: 40px; }
   /*---------*****--------Sobre Nosotros---------*****---------*/
+  .homeAbout__texto {
+    padding-top: 100px;
+    padding-bottom: 150px; }
   /*---------*****------------Juegos------------*****---------*/
   .homeJuegos__texto {
     padding-top: 100px;
@@ -560,23 +563,27 @@ RESPONSIVE-MEDIA QUERIES
   .crystal__img {
     padding-bottom: 40px; }
   /*---------*****--------Sobre Nosotros---------*****---------*/
+  .homeAbout__texto {
+    padding-bottom: 80px; }
+    .homeAbout__texto h1 {
+      font-size: 35px; }
   /*---------*****------------Juegos------------*****---------*/
   .homeJuegos__texto {
-    padding-bottom: 90px; }
+    padding-bottom: 80px; }
     .homeJuegos__texto h1 {
       font-size: 35px; }
   .juegos {
     padding-top: 14px; }
   /*---------*****------------Blog-------------*****-----------*/
   .homeBlog__texto {
-    padding-bottom: 90px; }
+    padding-bottom: 80px; }
     .homeBlog__texto h1 {
       font-size: 35px; }
   .blog {
     padding-top: 14px; }
   /*---------*****------Preguntas Frecuentes------*****--------*/
   .homePreguntas__texto {
-    padding-bottom: 90px; }
+    padding-bottom: 80px; }
     .homePreguntas__texto h1 {
       font-size: 35px; }
   .preguntas {

@@ -25,6 +25,9 @@ JUEGOS
     padding: 40px 0px;
     &__card {
         margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        border: none;
         &--titulo {
             color: $color-primary;
             font-size: 19px;
@@ -37,13 +40,7 @@ JUEGOS
             border-top-left-radius: 5px;
         } 
     }
-}
-
-.juegos__card {
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-    border: none;
-}
-.juegos__card:hover {
-    background-color:#0e71c74d;
+    &__card:hover {
+        background-color:#0e71c74d;
+    }
 }
