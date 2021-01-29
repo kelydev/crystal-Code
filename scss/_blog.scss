@@ -19,7 +19,7 @@ BANNER
     }
 }
 .blog {
-    padding: 50px 1%;
+    padding: 40px 0px;
     &__card {
         box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
         margin-bottom: 30px;
@@ -28,7 +28,7 @@ BANNER
             color: $color-primary;
             font-size: 19px;
         }
-        &--descripcion {
+        &--decripcion {
             font-size: 16px;
         }
     }

@@ -395,7 +395,7 @@ BANNER
     max-width: 100%; }
 
 .blog {
-  padding: 50px 1%; }
+  padding: 40px 0px; }
   .blog__card {
     box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
     margin-bottom: 30px;
@@ -403,7 +403,7 @@ BANNER
     .blog__card--texto {
       color: #0E70C7;
       font-size: 19px; }
-    .blog__card--descripcion {
+    .blog__card--decripcion {
       font-size: 16px; }
 
 /*------------------------------------------------------------------
@@ -440,9 +440,7 @@ BANNER
 RESPONSIVE-MEDIA QUERIES
 ------------------------------------------------------------------*/
 @media (max-width: 1199.98px) {
-  /*------------------------------------------------------------------
-    PRINCIPAL
-    ------------------------------------------------------------------*/
+  /*---------*****----------Principal-----------*****---------*/
   .home__texto {
     padding-top: 70px;
     padding-left: 10px; }
@@ -456,12 +454,14 @@ RESPONSIVE-MEDIA QUERIES
       padding-right: 5rem;
       margin-right: 5px; }
     .home__texto--form {
-      justify-content: center; } }
+      justify-content: center; }
+  /*---------*****--------Sobre Nosotros---------*****---------*/
+  /*---------*****------------Juegos------------*****---------*/
+  /*---------*****------------Blog-------------*****-----------*/
+  /*---------*****------Preguntas Frecuentes------*****--------*/ }
 
 @media (max-width: 991.98px) {
-  /*------------------------------------------------------------------
-    PRINCIPAL
-    ------------------------------------------------------------------*/
+  /*---------*****----------Principal-----------*****---------*/
   .header__menu {
     background-color: white !important;
     padding: 1rem 1rem; }
@@ -477,18 +477,19 @@ RESPONSIVE-MEDIA QUERIES
       display: none; }
   .crystal__img {
     padding-top: 40px; }
-  /*------------------------------------------------------------------
-    Sobre Nosotros
-    ------------------------------------------------------------------*/
-  /*--------------------Preguntas Frecuentes-------------------------*/
+  /*---------*****--------Sobre Nosotros---------*****---------*/
+  /*---------*****------------Juegos------------*****---------*/
+  /*---------*****------------Blog-------------*****-----------*/
+  .homeBlog__texto {
+    padding-top: 100px;
+    padding-bottom: 150px; }
+  /*---------*****------Preguntas Frecuentes------*****--------*/
   .homePreguntas__texto {
     padding-top: 100px;
     padding-bottom: 150px; } }
 
 @media (max-width: 767.98px) {
-  /*------------------------------------------------------------------
-    PRINCIPAL
-    ------------------------------------------------------------------*/
+  /*---------*****---------Principal---------*****---------*/
   .home__texto {
     margin-left: 1.5%;
     padding-left: 0.5%; }
@@ -508,12 +509,13 @@ RESPONSIVE-MEDIA QUERIES
     .testimonio__texto h3 {
       text-align: center;
       padding-top: 15px; }
-  /*------------------------------------------------------------------
-    SOBRE NOSOTROS
-    ------------------------------------------------------------------*/ }
+  /*---------*****--------Sobre Nosotros---------*****---------*/
+  /*---------*****------------Juegos------------*****---------*/
+  /*---------*****------------Blog-------------*****-----------*/
+  /*---------*****------Preguntas Frecuentes------*****--------*/ }
 
 @media (max-width: 575.98px) {
-  /*---home---*/
+  /*---------*****----------Principal-----------*****---------*/
   .home__texto {
     padding: 10% 5px 10% 5px;
     margin: 0 5%; }
@@ -537,10 +539,18 @@ RESPONSIVE-MEDIA QUERIES
       font-size: 0.8rem; }
     .home__texto--form {
       justify-content: center; }
-  /*---Crystal---*/
   .crystal__img {
     padding-bottom: 40px; }
-  /*---------****----------Preguntas Frecuentes--------****------------*/
+  /*---------*****--------Sobre Nosotros---------*****---------*/
+  /*---------*****------------Juegos------------*****---------*/
+  /*---------*****------------Blog-------------*****-----------*/
+  .homeBlog__texto {
+    padding-bottom: 100px; }
+    .homeBlog__texto h1 {
+      font-size: 35px; }
+  .blog {
+    padding-top: 15px; }
+  /*---------*****------Preguntas Frecuentes------*****--------*/
   .homePreguntas__texto {
     padding-bottom: 100px; }
     .homePreguntas__texto h1 {
