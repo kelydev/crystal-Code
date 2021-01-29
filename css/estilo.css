@@ -58,7 +58,7 @@ h5 {
   font-weight: 600; }
 
 p {
-  font-size: 17px;
+  font-size: 16px;
   color: #777777;
   font-weight: 400;
   line-height: 1.5;
@@ -249,21 +249,30 @@ FOOTER
 .footer {
   background-color: #0E70C7; }
   .footer__top {
-    padding-top: 20px;
-    margin-bottom: 80px; }
+    padding-top: 40px;
+    margin-bottom: 60px; }
     .footer__top--logo {
-      padding-top: 40px; }
+      margin-bottom: 35px; }
       .footer__top--logo img {
         max-height: 26px;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 20px; }
+    .footer__top--contacto {
+      margin-bottom: 21px; }
+      .footer__top--contacto li a {
+        padding-left: 10px;
+        text-decoration: none;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400; }
+      .footer__top--contacto li a:hover {
+        color: #FFC320; }
     .footer__top ul {
       list-style-type: none; }
       .footer__top ul li {
-        font-size: 17px;
+        font-size: 16px;
         margin: 7px; }
-    .footer__top .btn {
+    .footer__top .btnCuenta {
       color: #ffffff;
-      border-radius: 10px;
       padding: 13px 20px;
       background-color: #FFC320;
       box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25); }
@@ -272,14 +281,12 @@ FOOTER
       color: #0E70C7; }
     .footer__top h4 {
       padding-bottom: 10px; }
-    .footer__top--contacto li a {
-      padding-left: 30px; }
-  .footer p {
-    padding-top: 20px;
-    color: white; }
   .footer__bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px; }
+  .footer p {
+    color: #ffffff;
+    margin: 0px 0px 20px; }
 
 /*------------------------------------------------------------------
 HOME-SOBRE NOSOTROS
@@ -317,8 +324,6 @@ ORGANIZACION
     .organizacion__informacion--titulo {
       color: #0E70C7;
       font-size: 19px; }
-    .organizacion__informacion--decripcion {
-      font-size: 16px; }
 
 /*------------------------------------------------------------------
 EQUIPO
@@ -376,8 +381,6 @@ JUEGOS
     .juegos__card--titulo {
       color: #0E70C7;
       font-size: 19px; }
-    .juegos__card--descripcion {
-      font-size: 16px; }
     .juegos__card img {
       border-top-right-radius: 5px;
       border-top-left-radius: 5px; }
@@ -415,8 +418,6 @@ BLOG
     .blog__card--texto {
       color: #0E70C7;
       font-size: 19px; }
-    .blog__card--decripcion {
-      font-size: 16px; }
 
 /*------------------------------------------------------------------
 HOME-PREGUNTAS
@@ -448,8 +449,6 @@ PREGUNTAS
     .preguntas__card--titulo {
       color: #0E70C7;
       font-size: 19px; }
-    .preguntas__card--p {
-      font-size: 16px; }
 
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
