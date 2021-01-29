@@ -42,7 +42,6 @@ h3 {
   letter-spacing: .005em;
   color: #777777;
   font-size: 25px;
-  text-align: left;
   font-weight: 600; }
 
 h4 {
@@ -371,9 +370,25 @@ BANNER
 JUEGOS
 ------------------------------------------------------------------*/
 .juegos {
-  padding: 90px 0px; }
-  .juegos__cards {
-    margin-top: 10px; }
+  padding: 40px 0px; }
+  .juegos__card {
+    margin-bottom: 30px; }
+    .juegos__card--titulo {
+      color: #0E70C7;
+      font-size: 19px; }
+    .juegos__card--descripcion {
+      font-size: 16px; }
+    .juegos__card img {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px; }
+
+.juegos__card {
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border: none; }
+
+.juegos__card:hover {
+  background-color: #0e71c74d; }
 
 /*------------------------------------------------------------------
 HOME-PREGUNTAS
@@ -479,6 +494,9 @@ RESPONSIVE-MEDIA QUERIES
     padding-top: 40px; }
   /*---------*****--------Sobre Nosotros---------*****---------*/
   /*---------*****------------Juegos------------*****---------*/
+  .homeJuegos__texto {
+    padding-top: 100px;
+    padding-bottom: 150px; }
   /*---------*****------------Blog-------------*****-----------*/
   .homeBlog__texto {
     padding-top: 100px;
@@ -543,20 +561,26 @@ RESPONSIVE-MEDIA QUERIES
     padding-bottom: 40px; }
   /*---------*****--------Sobre Nosotros---------*****---------*/
   /*---------*****------------Juegos------------*****---------*/
+  .homeJuegos__texto {
+    padding-bottom: 90px; }
+    .homeJuegos__texto h1 {
+      font-size: 35px; }
+  .juegos {
+    padding-top: 14px; }
   /*---------*****------------Blog-------------*****-----------*/
   .homeBlog__texto {
-    padding-bottom: 100px; }
+    padding-bottom: 90px; }
     .homeBlog__texto h1 {
       font-size: 35px; }
   .blog {
-    padding-top: 15px; }
+    padding-top: 14px; }
   /*---------*****------Preguntas Frecuentes------*****--------*/
   .homePreguntas__texto {
-    padding-bottom: 100px; }
+    padding-bottom: 90px; }
     .homePreguntas__texto h1 {
       font-size: 35px; }
   .preguntas {
-    padding-top: 15px; } }
+    padding-top: 14px; } }
 
 /*@import "signin";
 @import "404";

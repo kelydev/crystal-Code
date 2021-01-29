@@ -22,8 +22,28 @@ BANNER
 JUEGOS
 ------------------------------------------------------------------*/
 .juegos{
-    padding: 90px 0px;
-    &__cards {
-        margin-top: 10px;
+    padding: 40px 0px;
+    &__card {
+        margin-bottom: 30px;
+        &--titulo {
+            color: $color-primary;
+            font-size: 19px;
+        }
+        &--descripcion {
+            font-size: 16px;
+        }
+        img {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        } 
     }
+}
+
+.juegos__card {
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border: none;
+}
+.juegos__card:hover {
+    background-color:#0e71c74d;
 }
