@@ -1,8 +1,35 @@
+/*------------------------------------------------------------------
+HOME-PREGUNTAS
+------------------------------------------------------------------*/
+.homeBlog{
+    @include home;
+    &__texto {
+        padding-top: 80px;
+        padding-bottom:200px;
+    }
+}
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerBlog {
+    @include banner;
+    &__img {
+        margin-top: -25%;
+        max-width: 100%;
+    }
+}
 .blog {
     padding: 50px 1%;
     &__card {
         box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
         margin-bottom: 30px;
         padding: 20px;
+        &--texto {
+            color: $color-primary;
+            font-size: 19px;
+        }
+        &--descripcion {
+            font-size: 16px;
+        }
     }
 }

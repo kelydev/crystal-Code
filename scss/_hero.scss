@@ -31,6 +31,7 @@ BANNER
 ------------------------------------------------------------------*/
 .banner {
     margin: 0px 0.5%;
+    text-align: center;
     &__img {
         //margin-top: -390px;
         margin-top: -32%;
@@ -41,7 +42,7 @@ BANNER
 SECCTION CRYSTAL
 ------------------------------------------------------------------*/
 .crystal {
-    background-color: $color-menu;
+    background-color: $color-white;
     margin: 45px 0px;
     h3 {
         color: $color-primary;
@@ -67,7 +68,7 @@ SECCTION METODOLOGIA CRYSTAL
         margin: 0px auto;
         max-width: 35%;
     }
-    .card {
+    /*&__card {
         margin: 8px 0px;
         padding: 30px 30px;
         box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
@@ -80,12 +81,13 @@ SECCTION METODOLOGIA CRYSTAL
     p{
         padding-bottom: 20px;
     }
+    &__card :hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+        transform: translateY(-2%);
+    }*/
 }
 
-.card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
-    transform: translateY(-2%);
-}
+
 /*------------------------------------------------------------------
 SECCTION USUARIOS REGISTRADOS
 ------------------------------------------------------------------*/
@@ -133,7 +135,7 @@ SECCTION TESTIMONIOS
         }
     }
     &__texto {
-        padding-bottom: 25px;
+        //padding-bottom: 25px;
         h3 {
             font-size: 19px;
             font-weight: 600;

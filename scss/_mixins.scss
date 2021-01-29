@@ -1,0 +1,8 @@
+@mixin home {
+    background-color: $color-primary;
+}
+
+@mixin banner{
+    margin: 0px 0.8% 10px;
+    text-align: center;
+}

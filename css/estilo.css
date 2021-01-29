@@ -40,9 +40,10 @@ h2 {
 
 h3 {
   letter-spacing: .005em;
-  color: #3C3C3C;
+  color: #777777;
   font-size: 25px;
-  text-align: left; }
+  text-align: left;
+  font-weight: 600; }
 
 h4 {
   color: #ffffff;
@@ -72,7 +73,7 @@ a {
 HEADER
 ------------------------------------------------------------------*/
 .header__menu {
-  padding: 1rem 0.8rem 0.8rem; }
+  padding: 1.2rem 0.8rem 0.8rem; }
   .header__menu .navbar-nav .nav-link {
     color: #066fcc;
     font-size: 1rem;
@@ -104,6 +105,8 @@ HEADER
     border-color: #066fcc; }
   .header__menu a.dropdown-item {
     color: #066fcc; }
+  .header__menu__imagen img {
+    max-width: 100%; }
 
 button:focus {
   outline: 1px dotted; }
@@ -134,7 +137,8 @@ HOME
 BANNER
 ------------------------------------------------------------------*/
 .banner {
-  margin: 0px 0.5%; }
+  margin: 0px 0.5%;
+  text-align: center; }
   .banner__img {
     margin-top: -32%;
     max-width: 100%; }
@@ -160,25 +164,28 @@ SECCTION METODOLOGIA CRYSTAL
 ------------------------------------------------------------------*/
 .metodologia {
   background-color: #f5f8fd;
-  padding: 70px 0 70px 0; }
+  padding: 70px 0 70px 0;
+  /*&__card {
+        margin: 8px 0px;
+        padding: 30px 30px;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+        cursor: default;
+        transition: all 400ms ease;
+    }
+    h4 {
+        color: $color-primary;
+    }
+    p{
+        padding-bottom: 20px;
+    }
+    &__card :hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+        transform: translateY(-2%);
+    }*/ }
   .metodologia .metodo-img {
     display: block;
     margin: 0px auto;
     max-width: 35%; }
-  .metodologia .card {
-    margin: 8px 0px;
-    padding: 30px 30px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease; }
-  .metodologia h4 {
-    color: #0E70C7; }
-  .metodologia p {
-    padding-bottom: 20px; }
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
-  transform: translateY(-2%); }
 
 /*------------------------------------------------------------------
 SECCTION USUARIOS REGISTRADOS
@@ -219,16 +226,14 @@ SECCTION TESTIMONIOS
     .testimonio__usuario--img {
       width: 110px;
       border-radius: 50%; }
-  .testimonio__texto {
-    padding-bottom: 25px; }
-    .testimonio__texto h3 {
-      font-size: 19px;
-      font-weight: 600;
-      color: #6d6d6d; }
-    .testimonio__texto p {
-      margin-top: 30x;
-      font-size: 16px;
-      color: #777777; }
+  .testimonio__texto h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #6d6d6d; }
+  .testimonio__texto p {
+    margin-top: 30x;
+    font-size: 16px;
+    color: #777777; }
   .testimonio .carousel-indicators li {
     background-color: #0E70C7;
     border-radius: 50%;
@@ -261,7 +266,7 @@ FOOTER
       color: #ffffff;
       border-radius: 10px;
       padding: 13px 20px;
-      background-color: #FFC225;
+      background-color: #FFC320;
       box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25); }
     .footer__top .btnCuenta:hover {
       background: #ffffff;
@@ -284,7 +289,7 @@ HOME-SOBRE NOSOTROS
   background-color: #0E70C7; }
   .homeAbout__texto {
     padding-top: 80px;
-    padding-bottom: 70px; }
+    padding-bottom: 200px; }
     .homeAbout__texto--parrafo {
       color: #ffffff;
       padding-top: 10px; }
@@ -293,23 +298,36 @@ HOME-SOBRE NOSOTROS
 BANNER
 ------------------------------------------------------------------*/
 .bannerAbout {
-  margin: 0px 0.5%; }
+  margin: 0px 0.8% 10px;
+  text-align: center; }
   .bannerAbout__img {
-    margin-top: -9%; }
+    margin-top: -25%;
+    max-width: 100%; }
 
 /*------------------------------------------------------------------
 ORGANIZACION
 ------------------------------------------------------------------*/
 .organizacion {
   background-color: #EFF7F7; }
-  .organizacion__vision {
-    padding: 50px 2%; }
+  .organizacion__informacion {
+    margin: 30px 0px; }
+    .organizacion__informacion--imagen {
+      padding: 50px 0px;
+      text-align: center; }
+    .organizacion__informacion--texto {
+      padding: 50px 0px 0px; }
+      .organizacion__informacion--texto h3 {
+        font-size: 20px;
+        color: #0E70C7; }
 
+/*------------------------------------------------------------------
+CONTACTANOS
+------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 EQUIPO
 ------------------------------------------------------------------*/
 .equipo {
-  padding: 50px 0px 100px 0px; }
+  padding: 30px 0px 100px 0px; }
   .equipo h2 {
     color: #0E70C7; }
   .equipo__usuario {
@@ -317,18 +335,37 @@ EQUIPO
     .equipo__usuario .equipo__img {
       width: 120px;
       border-radius: 50%;
-      border: 4px solid #fff; }
+      border: 4px solid #fff;
+      padding-bottom: 10px; }
+    .equipo__usuario p {
+      background-color: #0E70C7;
+      border-radius: 5px;
+      padding: 10px;
+      color: #ffffff; }
+    .equipo__usuario span {
+      color: #777777; }
+
+.equipo__usuario--ceo {
+  padding: 0px 80px; }
 
 /*------------------------------------------------------------------
-HOME
+HOME-JUEGOS
 ------------------------------------------------------------------*/
 .homeJuegos {
-  background-color: #0E70C7;
-  padding: 100px 20px; }
-  .homeJuegos h1 {
-    padding-top: 5px; }
-  .homeJuegos p {
-    color: #ffffff; }
+  background-color: #0E70C7; }
+  .homeJuegos__texto {
+    padding-top: 80px;
+    padding-bottom: 200px; }
+
+/*-----------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerJuegos {
+  margin: 0px 0.8% 10px;
+  text-align: center; }
+  .bannerJuegos__img {
+    margin-top: -25%;
+    max-width: 100%; }
 
 /*------------------------------------------------------------------
 JUEGOS
@@ -338,23 +375,74 @@ JUEGOS
   .juegos__cards {
     margin-top: 10px; }
 
+/*------------------------------------------------------------------
+HOME-PREGUNTAS
+------------------------------------------------------------------*/
+.homeBlog {
+  background-color: #0E70C7; }
+  .homeBlog__texto {
+    padding-top: 80px;
+    padding-bottom: 200px; }
+
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerBlog {
+  margin: 0px 0.8% 10px;
+  text-align: center; }
+  .bannerBlog__img {
+    margin-top: -25%;
+    max-width: 100%; }
+
 .blog {
   padding: 50px 1%; }
   .blog__card {
     box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
     margin-bottom: 30px;
     padding: 20px; }
+    .blog__card--texto {
+      color: #0E70C7;
+      font-size: 19px; }
+    .blog__card--descripcion {
+      font-size: 16px; }
+
+/*------------------------------------------------------------------
+HOME-PREGUNTAS
+------------------------------------------------------------------*/
+.homePreguntas {
+  background-color: #0E70C7; }
+  .homePreguntas__texto {
+    padding-top: 80px;
+    padding-bottom: 200px; }
+
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerPreguntas {
+  margin: 0px 0.8% 10px;
+  text-align: center; }
+  .bannerPreguntas__img {
+    margin-top: -25%;
+    max-width: 100%; }
 
 .preguntas {
-  padding: 70px 0px; }
-  .preguntas__lista {
-    margin-bottom: 25px; }
+  padding: 40px 0px; }
+  .preguntas__card {
+    border: 1px dashed #0E70C7;
+    margin-bottom: 10px; }
+    .preguntas__card--titulo {
+      color: #0E70C7;
+      font-size: 19px; }
+    .preguntas__card--p {
+      font-size: 16px; }
 
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
 ------------------------------------------------------------------*/
 @media (max-width: 1199.98px) {
-  /*---home--*/
+  /*------------------------------------------------------------------
+    PRINCIPAL
+    ------------------------------------------------------------------*/
   .home__texto {
     padding-top: 70px;
     padding-left: 10px; }
@@ -371,11 +459,12 @@ RESPONSIVE-MEDIA QUERIES
       justify-content: center; } }
 
 @media (max-width: 991.98px) {
-  /*---header---*/
+  /*------------------------------------------------------------------
+    PRINCIPAL
+    ------------------------------------------------------------------*/
   .header__menu {
     background-color: white !important;
     padding: 1rem 1rem; }
-  /*---home---*/
   .home__texto {
     padding-top: 65px;
     padding-bottom: 90px; }
@@ -386,12 +475,20 @@ RESPONSIVE-MEDIA QUERIES
       margin: 0 0 1rem; }
     .home__texto .home__texto--correo {
       display: none; }
-  /*---Crystal---*/
   .crystal__img {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+  /*------------------------------------------------------------------
+    Sobre Nosotros
+    ------------------------------------------------------------------*/
+  /*--------------------Preguntas Frecuentes-------------------------*/
+  .homePreguntas__texto {
+    padding-top: 100px;
+    padding-bottom: 150px; } }
 
 @media (max-width: 767.98px) {
-  /*--home--*/
+  /*------------------------------------------------------------------
+    PRINCIPAL
+    ------------------------------------------------------------------*/
   .home__texto {
     margin-left: 1.5%;
     padding-left: 0.5%; }
@@ -404,16 +501,16 @@ RESPONSIVE-MEDIA QUERIES
       text-align: left; }
     .home__texto--form {
       justify-content: left; }
-  /*---Crystal---*/
   .crystal__img {
     padding-top: 130px; }
-  /*-----acerca de*/
-  /*---testimonios---*/
   .testimonio {
     text-align: center; }
     .testimonio__texto h3 {
       text-align: center;
-      padding-top: 15px; } }
+      padding-top: 15px; }
+  /*------------------------------------------------------------------
+    SOBRE NOSOTROS
+    ------------------------------------------------------------------*/ }
 
 @media (max-width: 575.98px) {
   /*---home---*/
@@ -442,7 +539,14 @@ RESPONSIVE-MEDIA QUERIES
       justify-content: center; }
   /*---Crystal---*/
   .crystal__img {
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+  /*---------****----------Preguntas Frecuentes--------****------------*/
+  .homePreguntas__texto {
+    padding-bottom: 100px; }
+    .homePreguntas__texto h1 {
+      font-size: 35px; }
+  .preguntas {
+    padding-top: 15px; } }
 
 /*@import "signin";
 @import "404";

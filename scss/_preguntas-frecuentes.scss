@@ -1,6 +1,37 @@
-.preguntas {
-    padding: 70px 0px;
-    &__lista {
-        margin-bottom: 25px;
+
+/*------------------------------------------------------------------
+HOME-PREGUNTAS
+------------------------------------------------------------------*/
+.homePreguntas{
+    @include home;
+    &__texto {
+        padding-top: 80px;
+        padding-bottom:200px;
     }
 }
+/*------------------------------------------------------------------
+BANNER
+------------------------------------------------------------------*/
+.bannerPreguntas {
+    @include banner;
+    &__img {
+        margin-top: -25%;
+        max-width: 100%;
+    }
+}
+.preguntas {
+    padding: 40px 0px;
+    &__card {
+        border: 1px dashed $color-primary;
+        margin-bottom: 10px;
+        &--titulo {
+            color: $color-primary;
+            font-size: 19px;
+        }
+        &--p {
+            font-size: 16px;
+        }
+    }
+}
+
+

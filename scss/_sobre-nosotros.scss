@@ -1,14 +1,13 @@
-@import "variable";
 /*------------------------------------------------------------------
 HOME-SOBRE NOSOTROS
 ------------------------------------------------------------------*/
 .homeAbout{
-    background-color: #0E70C7;
+    @include home;
     &__texto {
         padding-top: 80px;
-        padding-bottom:70px;
+        padding-bottom:200px;
         &--parrafo {
-            color:$color-menu;
+            color:$color-white;
             padding-top: 10px;
         }
     }
@@ -17,25 +16,41 @@ HOME-SOBRE NOSOTROS
 BANNER
 ------------------------------------------------------------------*/
 .bannerAbout {
-    margin: 0px 0.5%;
+    @include banner;
     &__img {
-        margin-top:-9%;
+        margin-top: -25%;
+        max-width: 100%;
     }
 }
+
 /*------------------------------------------------------------------
 ORGANIZACION
 ------------------------------------------------------------------*/
 .organizacion {
     background-color: #EFF7F7;
-    &__vision {
-        padding: 50px 2%;
+    &__informacion {
+        margin: 30px 0px;
+        &--imagen {
+            padding: 50px 0px;
+            text-align: center;
+        }
+        &--texto {
+            padding: 50px 0px 0px;
+            h3 {
+                font-size: 20px;
+                color: $color-primary
+            }
+        }
     }
 }
+/*------------------------------------------------------------------
+CONTACTANOS
+------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 EQUIPO
 ------------------------------------------------------------------*/
 .equipo{
-    padding: 50px 0px 100px 0px;
+    padding: 30px 0px 100px 0px;
     h2{
         color: $color-primary;
     }
@@ -45,6 +60,20 @@ EQUIPO
             width: 120px;
             border-radius: 50%;
             border: 4px solid #fff;
+            padding-bottom: 10px;
+        }
+        p {
+            background-color: $color-primary;
+            border-radius: 5px;
+            padding: 10px;
+            color: $color-white;  
+        }
+        span {
+            color: $color-texto;
         }
     }
 }
+.equipo__usuario--ceo {
+    padding: 0px 80px;
+}
+

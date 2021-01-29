@@ -2,7 +2,7 @@
 HEADER
 ------------------------------------------------------------------*/
 .header__menu {
-    padding: 1rem 0.8rem 0.8rem;
+    padding: 1.2rem 0.8rem 0.8rem;
     //background-color: white;
     .navbar-nav {
         .nav-link {
@@ -49,6 +49,11 @@ HEADER
     }
     a.dropdown-item {
         color: #066fcc;
+    }
+    &__imagen {
+        img {
+            max-width: 100%;
+        }
     }
 }
 button:focus {
