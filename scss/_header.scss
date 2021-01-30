@@ -3,21 +3,20 @@ HEADER
 ------------------------------------------------------------------*/
 .header__menu {
     padding: 1.2rem 0.8rem 0.8rem;
-    //background-color: white;
     .navbar-nav {
         .nav-link {
-            color:#066fcc;
+            color: $color-primary;
             font-size: 1rem;
             font-weight: 500;
             padding-right: .7rem;
             padding-left: .7rem;
             &:hover {
-                color:#3C3C3C;
+                color: $color-texto;
             }
         }
     }
     &.scrolled {
-        background-color: #ffffff !important;
+        background-color: $color-white !important;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     &--logo {
@@ -29,26 +28,26 @@ HEADER
     }
     &--boton {
         i {
-            color: #066fcc;
+            color: $color-primary;
             font-size: 28px;
         }
-        color: white;
+        color: $color-white;
     }
     &--sesion {
         .btn-outline-warning:hover{
-            color: white;
+            color: $color-white;
         }
         .btn-registrar {
-            background-color: #066fcc; 
+            background-color: $color-primary; 
         }
         .btn-outline-light:hover {
-            color: #066fcc; 
-            background-color: white;
-            border-color: #066fcc;
+            color: $color-primary; 
+            background-color: $color-white;
+            border-color: $color-primary;
         }
     }
     a.dropdown-item {
-        color: #066fcc;
+        color: $color-primary;
     }
     &__imagen {
         img {

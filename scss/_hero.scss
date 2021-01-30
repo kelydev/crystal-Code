@@ -2,12 +2,12 @@
 HOME
 ------------------------------------------------------------------*/
 .home {
-    background-color:#066fcc;
+    background-color:$color-primary;
     &__texto {
         padding:80px 5px 130px 5px;
         &--parrafo {
             font-size: 19px;
-            color:white;
+            color: $color-white;
             margin: 0 0 2rem;
         }
         &--correo{
@@ -15,13 +15,13 @@ HOME
             margin-right: 5px;
         }
         &--cuenta{
-            background-color: #FFC225;
+            background-color: $color-secondary;
             padding: 0.75rem;
         }
         .btn-outline-light:hover {
-            color: #FFC225; 
-            background-color: white;
-            border-color: #066fcc;
+            color: $color-secondary; 
+            background-color:$color-white;
+            border-color: $color-primary;
         }
     }
 }
@@ -105,7 +105,7 @@ SECCTION USUARIOS
     }
     p {
         font-size: 20px;
-        color: #ffffff;
+        color:$color-white;
         font-weight: 500;
     }
 }
@@ -135,12 +135,12 @@ SECCTION TESTIMONIOS
         h3 {
             font-size: 19px;
             font-weight: 600;
-            color: #6d6d6d;
+            color:$color-texto;
         }
         p {
             margin-top: 30x;
             font-size: 16px;
-            color: #777777;
+            color:$color-texto;
         }
     }
     .carousel-indicators li {

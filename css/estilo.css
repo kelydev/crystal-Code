@@ -1,20 +1,5 @@
 /*------------------------------------------------------------------
-[Table of contents]
-
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Service Section
-6.  Categories Section
-7.  Instagram Section
-8.  About Section
-9.  Contact
-10.  Footer Style
+Template default CSS
 -------------------------------------------------------------------*/
 * {
   margin: 0;
@@ -40,8 +25,8 @@ h2 {
 
 h3 {
   letter-spacing: .005em;
-  color: #777777;
-  font-size: 25px;
+  color: #0E70C7;
+  font-size: 19px;
   font-weight: 600; }
 
 h4 {
@@ -74,13 +59,13 @@ HEADER
 .header__menu {
   padding: 1.2rem 0.8rem 0.8rem; }
   .header__menu .navbar-nav .nav-link {
-    color: #066fcc;
+    color: #0E70C7;
     font-size: 1rem;
     font-weight: 500;
     padding-right: .7rem;
     padding-left: .7rem; }
     .header__menu .navbar-nav .nav-link:hover {
-      color: #3C3C3C; }
+      color: #777777; }
   .header__menu.scrolled {
     background-color: #ffffff !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -90,20 +75,20 @@ HEADER
       max-height: 26px;
       text-align: center; }
   .header__menu--boton {
-    color: white; }
+    color: #ffffff; }
     .header__menu--boton i {
-      color: #066fcc;
+      color: #0E70C7;
       font-size: 28px; }
   .header__menu--sesion .btn-outline-warning:hover {
-    color: white; }
+    color: #ffffff; }
   .header__menu--sesion .btn-registrar {
-    background-color: #066fcc; }
+    background-color: #0E70C7; }
   .header__menu--sesion .btn-outline-light:hover {
-    color: #066fcc;
-    background-color: white;
-    border-color: #066fcc; }
+    color: #0E70C7;
+    background-color: #ffffff;
+    border-color: #0E70C7; }
   .header__menu a.dropdown-item {
-    color: #066fcc; }
+    color: #0E70C7; }
   .header__menu__imagen img {
     max-width: 100%; }
 
@@ -114,23 +99,23 @@ button:focus {
 HOME
 ------------------------------------------------------------------*/
 .home {
-  background-color: #066fcc; }
+  background-color: #0E70C7; }
   .home__texto {
     padding: 80px 5px 130px 5px; }
     .home__texto--parrafo {
       font-size: 19px;
-      color: white;
+      color: #ffffff;
       margin: 0 0 2rem; }
     .home__texto--correo {
       padding: 1.5rem 9rem 1.5rem 0.75rem;
       margin-right: 5px; }
     .home__texto--cuenta {
-      background-color: #FFC225;
+      background-color: #FFC320;
       padding: 0.75rem; }
     .home__texto .btn-outline-light:hover {
-      color: #FFC225;
-      background-color: white;
-      border-color: #066fcc; }
+      color: #FFC320;
+      background-color: #ffffff;
+      border-color: #0E70C7; }
 
 /*------------------------------------------------------------------
 BANNER
@@ -226,7 +211,7 @@ SECCTION TESTIMONIOS
   .testimonio__texto h3 {
     font-size: 19px;
     font-weight: 600;
-    color: #6d6d6d; }
+    color: #777777; }
   .testimonio__texto p {
     margin-top: 30x;
     font-size: 16px;
@@ -376,9 +361,6 @@ JUEGOS
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     border: none; }
-    .juegos__card--titulo {
-      color: #0E70C7;
-      font-size: 19px; }
     .juegos__card img {
       border-top-right-radius: 5px;
       border-top-left-radius: 5px; }
@@ -413,9 +395,6 @@ BLOG
     box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
     margin-bottom: 30px;
     padding: 20px; }
-    .blog__card--texto {
-      color: #0E70C7;
-      font-size: 19px; }
 
 /*------------------------------------------------------------------
 HOME-PREGUNTAS
@@ -444,9 +423,6 @@ PREGUNTAS
   .preguntas__card {
     border: 1px dashed #0E70C7;
     margin-bottom: 10px; }
-    .preguntas__card--titulo {
-      color: #0E70C7;
-      font-size: 19px; }
 
 /*------------------------------------------------------------------
 RESPONSIVE-MEDIA QUERIES
@@ -466,16 +442,12 @@ RESPONSIVE-MEDIA QUERIES
       padding-right: 5rem;
       margin-right: 5px; }
     .home__texto--form {
-      justify-content: center; }
-  /*---------*****--------Sobre Nosotros---------*****---------*/
-  /*---------*****------------Juegos------------*****---------*/
-  /*---------*****------------Blog-------------*****-----------*/
-  /*---------*****------Preguntas Frecuentes------*****--------*/ }
+      justify-content: center; } }
 
 @media (max-width: 991.98px) {
   /*---------*****----------Principal-----------*****---------*/
   .header__menu {
-    background-color: white !important;
+    background-color: #ffffff !important;
     padding: 1rem 1rem; }
   .home__texto {
     padding-top: 65px;
@@ -527,11 +499,7 @@ RESPONSIVE-MEDIA QUERIES
     text-align: center; }
     .testimonio__texto h3 {
       text-align: center;
-      padding-top: 15px; }
-  /*---------*****--------Sobre Nosotros---------*****---------*/
-  /*---------*****------------Juegos------------*****---------*/
-  /*---------*****------------Blog-------------*****-----------*/
-  /*---------*****------Preguntas Frecuentes------*****--------*/ }
+      padding-top: 15px; } }
 
 @media (max-width: 575.98px) {
   /*---------*****----------Principal-----------*****---------*/
@@ -552,7 +520,7 @@ RESPONSIVE-MEDIA QUERIES
       padding-right: 0px;
       padding-left: 10px; }
     .home__texto .home__texto--cuenta {
-      background-color: #FFC225;
+      background-color: #FFC320;
       margin-bottom: 10%;
       padding: 0.50rem;
       font-size: 0.8rem; }
@@ -587,8 +555,3 @@ RESPONSIVE-MEDIA QUERIES
       font-size: 35px; }
   .preguntas {
     padding-top: 14px; } }
-
-/*@import "signin";
-@import "404";
-@import "typography";
-*/

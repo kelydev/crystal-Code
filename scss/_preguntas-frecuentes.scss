@@ -5,8 +5,7 @@ HOME-PREGUNTAS
 .homePreguntas{
     @include home;
     &__texto {
-        padding-top: 80px;
-        padding-bottom:200px;
+        @include homeTexto; 
     }
 }
 /*------------------------------------------------------------------
@@ -27,10 +26,6 @@ PREGUNTAS
     &__card {
         border: 1px dashed $color-primary;
         margin-bottom: 10px;
-        &--titulo {
-            color: $color-primary;
-            font-size: 19px;
-        }
     }
 }
 

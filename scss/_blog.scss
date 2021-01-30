@@ -4,8 +4,7 @@ HOME-BLOG
 .homeBlog{
     @include home;
     &__texto {
-        padding-top: 80px;
-        padding-bottom:200px;
+        @include homeTexto; 
     }
 }
 /*------------------------------------------------------------------
@@ -27,9 +26,5 @@ BLOG
         box-shadow: 0 0 14px rgba(34, 44, 55, 0.1);
         margin-bottom: 30px;
         padding: 20px;
-        &--texto {
-            color: $color-primary;
-            font-size: 19px;
-        }
     }
 }

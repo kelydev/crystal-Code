@@ -4,8 +4,7 @@ HOME-JUEGOS
 .homeJuegos{
     @include home;
     &__texto {
-        padding-top: 80px;
-        padding-bottom:200px;
+        @include homeTexto; 
     }
 }
 /*-----------------------------------------------------------------
@@ -28,10 +27,6 @@ JUEGOS
         border-radius: 5px;
         box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
         border: none;
-        &--titulo {
-            color: $color-primary;
-            font-size: 19px;
-        }
         img {
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;

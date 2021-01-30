@@ -4,8 +4,7 @@ HOME-SOBRE NOSOTROS
 .homeAbout{
     @include home;
     &__texto {
-        padding-top: 80px;
-        padding-bottom:200px;
+        @include homeTexto; 
         &--parrafo {
             color:$color-white;
             padding-top: 10px;
