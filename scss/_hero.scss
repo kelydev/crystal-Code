@@ -10,15 +10,14 @@ HOME
             color:white;
             margin: 0 0 2rem;
         }
-        .home__texto--correo{
+        &--correo{
             padding: 1.5rem 9rem 1.5rem 0.75rem;
             margin-right: 5px;
         }
-        .home__texto--cuenta{
+        &--cuenta{
             background-color: #FFC225;
             padding: 0.75rem;
         }
-        
         .btn-outline-light:hover {
             color: #FFC225; 
             background-color: white;
@@ -33,7 +32,6 @@ BANNER
     margin: 0px 0.5%;
     text-align: center;
     &__img {
-        //margin-top: -390px;
         margin-top: -32%;
         max-width: 100%;
     }
@@ -43,13 +41,13 @@ SECCTION CRYSTAL
 ------------------------------------------------------------------*/
 .crystal {
     background-color: $color-white;
-    margin: 45px 0px;
+    margin: 40px 0px;
     h3 {
         color: $color-primary;
     }
     &__img {
         padding-top: 40px;
-        width: 90%;
+        padding-bottom: 5px;
     }
     span {
         font-size: 15px;
@@ -61,19 +59,12 @@ SECCTION CRYSTAL
 SECCTION METODOLOGIA CRYSTAL
 ------------------------------------------------------------------*/
 .metodologia{
-    background-color: #f5f8fd;
-    padding: 70px 0 70px 0;
+    background-color: $color-fondo;
+    padding: 60px 0px 75px;
     .metodo-img {
         display: block;
         margin: 0px auto;
         max-width: 35%;
-    }
-    /*&__card {
-        margin: 8px 0px;
-        padding: 30px 30px;
-        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-        cursor: default;
-        transition: all 400ms ease;
     }
     h4 {
         color: $color-primary;
@@ -81,15 +72,20 @@ SECCTION METODOLOGIA CRYSTAL
     p{
         padding-bottom: 20px;
     }
-    &__card :hover {
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
-        transform: translateY(-2%);
-    }*/
 }
-
-
+.metodologia__card {
+    margin: 8px 0px;
+    padding: 30px 30px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.metodologia__card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+    transform: translateY(-2%);
+}
 /*------------------------------------------------------------------
-SECCTION USUARIOS REGISTRADOS
+SECCTION USUARIOS
 ------------------------------------------------------------------*/
 .usuarios {
     background-image: url("../img/fondoAzul.jpg");
@@ -122,7 +118,7 @@ SECCTION USUARIOS REGISTRADOS
 SECCTION TESTIMONIOS
 ------------------------------------------------------------------*/
 .testimonio {
-    padding: 75px 0px;
+    padding: 60px 0px 75px;
     &__titulo {
         text-align: center;
         padding-bottom:40px;

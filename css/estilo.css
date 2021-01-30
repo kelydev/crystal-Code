@@ -26,7 +26,7 @@ body {
   letter-spacing: 0.01071em; }
 
 h1 {
-  font-size: 43px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.3; }
 
@@ -121,10 +121,10 @@ HOME
       font-size: 19px;
       color: white;
       margin: 0 0 2rem; }
-    .home__texto .home__texto--correo {
+    .home__texto--correo {
       padding: 1.5rem 9rem 1.5rem 0.75rem;
       margin-right: 5px; }
-    .home__texto .home__texto--cuenta {
+    .home__texto--cuenta {
       background-color: #FFC225;
       padding: 0.75rem; }
     .home__texto .btn-outline-light:hover {
@@ -147,12 +147,12 @@ SECCTION CRYSTAL
 ------------------------------------------------------------------*/
 .crystal {
   background-color: #ffffff;
-  margin: 45px 0px; }
+  margin: 40px 0px; }
   .crystal h3 {
     color: #0E70C7; }
   .crystal__img {
     padding-top: 40px;
-    width: 90%; }
+    padding-bottom: 5px; }
   .crystal span {
     font-size: 15px;
     color: #0E70C7;
@@ -163,31 +163,29 @@ SECCTION METODOLOGIA CRYSTAL
 ------------------------------------------------------------------*/
 .metodologia {
   background-color: #f5f8fd;
-  padding: 70px 0 70px 0;
-  /*&__card {
-        margin: 8px 0px;
-        padding: 30px 30px;
-        box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-        cursor: default;
-        transition: all 400ms ease;
-    }
-    h4 {
-        color: $color-primary;
-    }
-    p{
-        padding-bottom: 20px;
-    }
-    &__card :hover {
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
-        transform: translateY(-2%);
-    }*/ }
+  padding: 60px 0px 75px; }
   .metodologia .metodo-img {
     display: block;
     margin: 0px auto;
     max-width: 35%; }
+  .metodologia h4 {
+    color: #0E70C7; }
+  .metodologia p {
+    padding-bottom: 20px; }
+
+.metodologia__card {
+  margin: 8px 0px;
+  padding: 30px 30px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease; }
+
+.metodologia__card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+  transform: translateY(-2%); }
 
 /*------------------------------------------------------------------
-SECCTION USUARIOS REGISTRADOS
+SECCTION USUARIOS
 ------------------------------------------------------------------*/
 .usuarios {
   background-image: url("../img/fondoAzul.jpg");
@@ -216,7 +214,7 @@ SECCTION USUARIOS REGISTRADOS
 SECCTION TESTIMONIOS
 ------------------------------------------------------------------*/
 .testimonio {
-  padding: 75px 0px; }
+  padding: 60px 0px 75px; }
   .testimonio__titulo {
     text-align: center;
     padding-bottom: 40px; }
@@ -523,7 +521,8 @@ RESPONSIVE-MEDIA QUERIES
     .home__texto--form {
       justify-content: left; }
   .crystal__img {
-    padding-top: 130px; }
+    padding-top: 0px;
+    padding-bottom: 10px; }
   .testimonio {
     text-align: center; }
     .testimonio__texto h3 {
@@ -560,7 +559,8 @@ RESPONSIVE-MEDIA QUERIES
     .home__texto--form {
       justify-content: center; }
   .crystal__img {
-    padding-bottom: 40px; }
+    padding-top: 0px;
+    padding-bottom: 10px; }
   /*---------*****--------Sobre Nosotros---------*****---------*/
   .homeAbout__texto {
     padding-bottom: 80px; }
